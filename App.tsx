@@ -11,6 +11,14 @@ import CustomCursor from './components/CustomCursor';
 import ProjectCard from './components/ArtistCard';
 import { Project, Skill, Experience } from './types';
 
+import logoVintage from "/src/assets/logo-vintage.png";
+import logoCloseUp from "/src/assets/logo-closeup.png";
+import logoNative from "/src/assets/logo-native.png";
+import logoPBA from "/src/assets/logo-pba.png";
+
+import flagEn from "/src/assets/flag-en.png";
+import flagEs from "/src/assets/flag-es.png";
+
 // --- DATA ---
 
 const SKILLS: Skill[] = [
@@ -25,10 +33,10 @@ const SKILLS: Skill[] = [
 ];
 
 const EXPERIENCE: Experience[] = [
-  { company: 'CloseUp Comunicaciones', role: 'Diseñador gráfico', period: '2025', logo: '/assets/logo-closeup.png' },
-  { company: 'Native Media Work', role: 'Diseñador gráfico', period: '2024', logo: '/assets/logo-native.png' },
-  { company: 'Vintage Publicidad', role: 'Diseñador gráfico', period: '2017 - 2023', logo: '/assets/logo-vintage.png' },
-  { company: 'Parabola Studios', role: 'Diseñador gráfico', period: '2015', logo: '/assets/logo-pba.png' },
+  { company: 'CloseUp Comunicaciones', role: 'Diseñador gráfico', period: '2025', logo: logoCloseUp },
+  { company: 'Native Media Work', role: 'Diseñador gráfico', period: '2024', logo: logoNative },
+  { company: 'Vintage Publicidad', role: 'Diseñador gráfico', period: '2017 - 2023', logo: logoVintage },
+  { company: 'Parabola Studios', role: 'Diseñador gráfico', period: '2015', logo: logoPBA },
 ];
 
 const PROJECTS: Project[] = [
