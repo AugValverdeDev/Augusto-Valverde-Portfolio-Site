@@ -25,10 +25,10 @@ const SKILLS: Skill[] = [
 ];
 
 const EXPERIENCE: Experience[] = [
-  { company: 'CloseUp Comunicaciones', role: 'Diseñador gráfico', period: '2025', logo: '/assets/logo-closeup.png' },
-  { company: 'Native Media Work', role: 'Diseñador gráfico', period: '2024', logo: '/assets/logo-native.png' },
-  { company: 'Vintage Publicidad', role: 'Diseñador gráfico', period: '2017 - 2023', logo: '/assets/logo-vintage.png' },
-  { company: 'Parabola Studios', role: 'Diseñador gráfico', period: '2015', logo: '/assets/logo-pba.png' },
+  { company: 'CloseUp Comunicaciones', role: 'Diseñador gráfico', period: '2025', logo: 'https://iili.io/fdyBHiP.md.png' },
+  { company: 'Native Media Work', role: 'Diseñador gráfico', period: '2024', logo: 'https://iili.io/fdyB20F.md.png' },
+  { company: 'Vintage Publicidad', role: 'Diseñador gráfico', period: '2017 - 2023', logo: 'https://iili.io/fdyBdf1.md.png' },
+  { company: 'Parabola Studios', role: 'Diseñador gráfico', period: '2015', logo: 'https://iili.io/fdyB9WB.md.png' },
 ];
 
 const PROJECTS: Project[] = [
@@ -298,7 +298,7 @@ const App: React.FC = () => {
               initial={{ opacity: 0, scale: 0.9, x: 20 }}
               animate={{ opacity: 1, scale: 1, x: 0 }}
               transition={{ delay: 1.5, duration: 0.8 }}
-              className="absolute left-1/2 -translate-x-1/2 -top-32 w-32 md:top-auto md:bottom-12 md:w-48 md:left-[85%] md:-translate-x-1/2"
+              className="absolute left-1/3 -translate-x-1/2 -top-32 w-32 md:left-[85%] md:-translate-x-1/2 md:-bottom-12 md:top-auto md:w-48 z-10 pointer-events-none"
             >
               <img 
                 src="/assets/greengo-doodle-01-standing-border.svg" 
