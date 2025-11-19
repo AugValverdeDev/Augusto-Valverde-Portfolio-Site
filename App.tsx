@@ -13,178 +13,299 @@ import { Project, Skill, Experience } from './types';
 
 // --- DATA ---
 
-const SKILLS: Skill[] = [
-  { name: 'Photoshop', level: 95, icon: PenTool },
-  { name: 'Illustrator', level: 90, icon: PenTool },
-  { name: 'InDesign', level: 85, icon: PenTool },
-  { name: 'After Effects', level: 80, icon: Video },
-  { name: 'DaVinci Resolve', level: 75, icon: Video },
-  { name: 'Cinema 4D', level: 70, icon: Box },
-  { name: 'Blender', level: 75, icon: Box },
-  { name: 'IA Generativa', level: 85, icon: Monitor },
+const SKILLS_DATA = [
+  { name_es: 'Photoshop', name_en: 'Photoshop', level: 95, icon: PenTool },
+  { name_es: 'Illustrator', name_en: 'Illustrator', level: 90, icon: PenTool },
+  { name_es: 'InDesign', name_en: 'InDesign', level: 85, icon: PenTool },
+  { name_es: 'After Effects', name_en: 'After Effects', level: 80, icon: Video },
+  { name_es: 'DaVinci Resolve', name_en: 'DaVinci Resolve', level: 75, icon: Video },
+  { name_es: 'Cinema 4D', name_en: 'Cinema 4D', level: 70, icon: Box },
+  { name_es: 'Blender', name_en: 'Blender', level: 75, icon: Box },
+  { name_es: 'IA Generativa', name_en: 'Generative AI', level: 85, icon: Monitor },
 ];
 
-const EXPERIENCE: Experience[] = [
-  { company: 'CloseUp Comunicaciones', role: 'Diseñador gráfico', period: '2025', logo: 'https://iili.io/fdyBHiP.md.png' },
-  { company: 'Native Media Work', role: 'Diseñador gráfico', period: '2024', logo: 'https://iili.io/fdyB20F.md.png' },
-  { company: 'Vintage Publicidad', role: 'Diseñador gráfico', period: '2017 - 2023', logo: 'https://iili.io/fdyBdf1.md.png' },
-  { company: 'Parabola Studios', role: 'Diseñador gráfico', period: '2015', logo: 'https://iili.io/fdyB9WB.md.png' },
+const EXPERIENCE_DATA = [
+  { 
+    company: 'CloseUp Comunicaciones', 
+    role_es: 'Diseñador gráfico', 
+    role_en: 'Graphic Designer',
+    period: '2025', 
+    logo: 'https://iili.io/fdyBHiP.md.png' 
+  },
+  { 
+    company: 'Native Media Work', 
+    role_es: 'Diseñador gráfico', 
+    role_en: 'Graphic Designer',
+    period: '2024', 
+    logo: 'https://iili.io/fdyB20F.md.png' 
+  },
+  { 
+    company: 'Vintage Publicidad', 
+    role_es: 'Diseñador gráfico', 
+    role_en: 'Graphic Designer',
+    period: '2017 - 2023', 
+    logo: 'https://iili.io/fdyBdf1.md.png' 
+  },
+  { 
+    company: 'Parabola Studios', 
+    role_es: 'Diseñador gráfico', 
+    role_en: 'Graphic Designer',
+    period: '2015', 
+    logo: 'https://iili.io/fdyB9WB.md.png' 
+  },
 ];
 
-const PROJECTS: Project[] = [
+const PROJECTS_DATA = [
   { 
     id: '1', 
-    title: 'Key Visuals', 
+    title_es: 'Key Visuals',
+    title_en: 'Key Visuals',
     client: 'ASTRIX', 
-    category: 'Campaña', 
+    category_es: 'Campaña',
+    category_en: 'Campaign',
     year: '2024',
     image: '/assets/astrix-kv.jpg',
-    description: 'Diseño de Key Visuals para líneas de productos Astrix (OLA, LIZ). Enfoque en composición vibrante de productos y visuales de alto impacto.'
+    description_es: 'Diseño de Key Visuals para líneas de productos Astrix (OLA, LIZ). Enfoque en composición vibrante de productos y visuales de alto impacto.',
+    description_en: 'Key visual design for Astrix product lines (OLA, LIZ). Focus on vibrant product compositing and high-impact visuals.'
   },
   { 
     id: '2', 
-    title: 'Contenido RRSS', 
+    title_es: 'Contenido RRSS',
+    title_en: 'Social Media Content',
     client: 'ASTRIX', 
-    category: 'Redes Sociales', 
+    category_es: 'Redes Sociales',
+    category_en: 'Social Media',
     year: '2024',
     image: '/assets/astrix-rrss.jpg',
-    description: 'Estrategia de contenido para redes sociales de marcas OLA y LIZ, destacando "Gala es el mejor shampoo" y posts de engagement estilo meme.'
+    description_es: 'Estrategia de contenido para redes sociales de marcas OLA y LIZ, destacando "Gala es el mejor shampoo" y posts de engagement estilo meme.',
+    description_en: 'Social media content strategy for OLA and LIZ brands, featuring "Gala es el mejor shampoo" and meme-style engagement posts.'
   },
   { 
     id: '3', 
-    title: 'Key Visuals Retail', 
+    title_es: 'Key Visuals Retail',
+    title_en: 'Retail Key Visuals',
     client: 'KETAL', 
-    category: 'Campaña', 
+    category_es: 'Campaña',
+    category_en: 'Campaign',
     year: '2023',
     image: '/assets/ketal-kv.jpg',
-    description: 'Visuales de marketing retail para Ketal Hipermercados, incluyendo "2do Aguinaldo" y "Amiga nos quedamos sin piqueos".'
+    description_es: 'Visuales de marketing retail para Ketal Hipermercados, incluyendo "2do Aguinaldo" y "Amiga nos quedamos sin piqueos".',
+    description_en: 'Retail marketing visuals for Ketal Hipermercados, including "2do Aguinaldo" and "Amiga nos quedamos sin piqueos".'
   },
   { 
     id: '4', 
-    title: 'Campañas Mensuales', 
+    title_es: 'Campañas Mensuales',
+    title_en: 'Monthly Campaigns',
     client: 'KETAL', 
-    category: 'Ilustración', 
+    category_es: 'Ilustración',
+    category_en: 'Illustration',
     year: '2023',
     image: '/assets/ketal-campaign.jpg',
-    description: 'Diseño de personajes y campañas mensuales temáticas, presentando el concepto de superhéroe "Mayo Espectacular".'
+    description_es: 'Diseño de personajes y campañas mensuales temáticas, presentando el concepto de superhéroe "Mayo Espectacular".',
+    description_en: 'Character design and thematic monthly campaigns, featuring the "Mayo Espectacular" superhero concept.'
   },
   { 
     id: '5', 
-    title: 'Guerreros Solidarios', 
+    title_es: 'Guerreros Solidarios',
+    title_en: 'Guerreros Solidarios',
     client: 'La Boliviana Ciacruz', 
-    category: 'Campaña', 
+    category_es: 'Campaña',
+    category_en: 'Campaign',
     year: '2023',
     image: '/assets/lbc-guerreros.jpg',
-    description: 'Dirección de arte para la campaña "Guerreros Solidarios", destacando historias de coraje, nobleza y fortaleza.'
+    description_es: 'Dirección de arte para la campaña "Guerreros Solidarios", destacando historias de coraje, nobleza y fortaleza.',
+    description_en: 'Art direction for the "Guerreros Solidarios" campaign, highlighting stories of courage, nobility, and strength.'
   },
   { 
     id: '6', 
-    title: 'Contenido RRSS', 
+    title_es: 'Contenido RRSS',
+    title_en: 'Social Media Content',
     client: 'La Boliviana Ciacruz', 
-    category: 'Redes Sociales', 
+    category_es: 'Redes Sociales',
+    category_en: 'Social Media',
     year: '2023',
     image: '/assets/lbc-rrss.jpg',
-    description: 'Gestión integral de redes sociales para productos de seguros (Auto, Hogar) con una estética limpia y corporativa.'
+    description_es: 'Gestión integral de redes sociales para productos de seguros (Auto, Hogar) con una estética limpia y corporativa.',
+    description_en: 'Comprehensive social media management for insurance products (Auto, Hogar) with a clean, corporate aesthetic.'
   },
   { 
     id: '7', 
-    title: 'Publicidad Corporativa', 
+    title_es: 'Publicidad Corporativa',
+    title_en: 'Corporate Advertising',
     client: 'AXS', 
-    category: 'Branding', 
+    category_es: 'Branding',
+    category_en: 'Branding',
     year: '2024',
     image: '/assets/axs-corp.jpg',
-    description: 'Visuales publicitarios corporativos de alta tecnología para AXS, enfatizando conectividad, velocidad y tecnología futura.'
+    description_es: 'Visuales publicitarios corporativos de alta tecnología para AXS, enfatizando conectividad, velocidad y tecnología futura.',
+    description_en: 'High-tech corporate advertising visuals for AXS, emphasizing connectivity, speed, and future tech.'
   },
   { 
     id: '8', 
-    title: 'Social Media & Promo', 
+    title_es: 'Social Media & Promo',
+    title_en: 'Social Media & Promo',
     client: 'AXS', 
-    category: 'Redes Sociales', 
+    category_es: 'Redes Sociales',
+    category_en: 'Social Media',
     year: '2024',
     image: '/assets/axs-rrss.jpg',
-    description: 'Diseños dinámicos para redes sociales de planes de internet, "El Poder de 1 Bs" y promociones de servicios de streaming.'
+    description_es: 'Diseños dinámicos para redes sociales de planes de internet, "El Poder de 1 Bs" y promociones de servicios de streaming.',
+    description_en: 'Dynamic social media designs for internet plans, "El Poder de 1 Bs", and streaming service promotions.'
   },
   { 
     id: '9', 
-    title: 'Branding & Souvenirs', 
+    title_es: 'Branding & Souvenirs',
+    title_en: 'Branding & Souvenirs',
     client: 'AXS', 
-    category: 'Merchandising', 
+    category_es: 'Merchandising',
+    category_en: 'Merch',
     year: '2024',
     image: '/assets/axs-branding.jpg',
-    description: 'Diseño de merchandising incluyendo camisetas, tazas y packaging para eventos corporativos y patrocinios de carnaval.'
+    description_es: 'Diseño de merchandising incluyendo camisetas, tazas y packaging para eventos corporativos y patrocinios de carnaval.',
+    description_en: 'Merchandise design including T-shirts, mugs, and packaging for corporate events and carnival sponsorships.'
   },
   { 
     id: '10', 
-    title: 'Diseño de Stands', 
+    title_es: 'Diseño de Stands',
+    title_en: 'Stand Design',
     client: 'AXS', 
-    category: '3D / Eventos', 
+    category_es: '3D / Eventos',
+    category_en: '3D / Event',
     year: '2024',
     image: '/assets/axs-stands.jpg',
-    description: 'Visualización 3D y diseño espacial para centros de experiencia y stands comerciales de AXS.'
+    description_es: 'Visualización 3D y diseño espacial para centros de experiencia y stands comerciales de AXS.',
+    description_en: '3D visualization and spatial design for AXS experience centers and commercial stands.'
   },
   { 
     id: '11', 
-    title: 'Stickers WhatsApp', 
+    title_es: 'Stickers WhatsApp',
+    title_en: 'WhatsApp Stickers',
     client: 'AXS', 
-    category: 'Ilustración', 
+    category_es: 'Ilustración',
+    category_en: 'Illustration',
     year: '2024',
     image: '/assets/axs-stickers.jpg',
-    description: 'Set de ilustraciones personalizadas para stickers de WhatsApp utilizados en marketing digital y servicio al cliente.'
+    description_es: 'Set de ilustraciones personalizadas para stickers de WhatsApp utilizados en marketing digital y servicio al cliente.',
+    description_en: 'Custom illustration set for WhatsApp stickers used in digital marketing and customer service.'
   },
   { 
     id: '12', 
-    title: 'Dental Social Media', 
+    title_es: 'Dental Social Media',
+    title_en: 'Dental Social Media',
     client: 'INNOVASALUD', 
-    category: 'Redes Sociales', 
+    category_es: 'Redes Sociales',
+    category_en: 'Social Media',
     year: '2024',
     image: '/assets/innovasalud.jpg',
-    description: 'Gráficos limpios y accesibles para redes sociales de servicios de salud dental, campañas de blanqueamiento y publicaciones estacionales.'
+    description_es: 'Gráficos limpios y accesibles para redes sociales de servicios de salud dental, campañas de blanqueamiento y publicaciones estacionales.',
+    description_en: 'Clean, approachable social media graphics for dental health services, whitening campaigns, and seasonal posts.'
   },
   { 
     id: '13', 
-    title: 'Salvar Los Bosques', 
+    title_es: 'Salvar Los Bosques',
+    title_en: 'Save The Forests',
     client: 'PRO PACHA', 
-    category: 'Campaña', 
+    category_es: 'Campaña',
+    category_en: 'Campaign',
     year: '2023',
     image: '/assets/propacha.jpg',
-    description: 'Campaña de conciencia ambiental "Juntos podemos salvar los bosques" presentando bomberos voluntarios y fotografía de naturaleza.'
+    description_es: 'Campaña de conciencia ambiental "Juntos podemos salvar los bosques" presentando bomberos voluntarios y fotografía de naturaleza.',
+    description_en: 'Environmental awareness campaign "Juntos podemos salvar los bosques" featuring volunteer firefighters and nature photography.'
   },
   { 
     id: '14', 
-    title: 'Set "Mi Casa Es Tu Casa"', 
+    title_es: 'Set "Mi Casa Es Tu Casa"',
+    title_en: '"Mi Casa Es Tu Casa" Set',
     client: 'ATB', 
-    category: '3D / Set Design', 
+    category_es: '3D / Set Design',
+    category_en: '3D / Set Design',
     year: '2024',
     image: '/assets/atb-set.jpg',
-    description: 'Rediseño de set virtual para el programa de TV "Mi Casa Es Tu Casa", creado en Blender/Cinema 4D.'
+    description_es: 'Rediseño de set virtual para el programa de TV "Mi Casa Es Tu Casa", creado en Blender/Cinema 4D.',
+    description_en: 'Virtual set redesign for the TV program "Mi Casa Es Tu Casa", created in Blender/Cinema 4D.'
   },
   { 
     id: '15', 
-    title: 'Activación Expofarma', 
+    title_es: 'Activación Expofarma',
+    title_en: 'Expofarma Activation',
     client: 'BAGÓ', 
-    category: 'Eventos', 
+    category_es: 'Eventos',
+    category_en: 'Event',
     year: '2025',
     image: '/assets/bago-expofarma.jpg',
-    description: 'Diseño de stand de activación para Refrianex en Expofarma 2025, con zonas de fotos interactivas.'
+    description_es: 'Diseño de stand de activación para Refrianex en Expofarma 2025, con zonas de fotos interactivas.',
+    description_en: 'Event activation booth design for Refrianex at Expofarma 2025, featuring interactive photo zones.'
   },
   { 
     id: '16', 
-    title: 'Conferencia & Stand', 
+    title_es: 'Conferencia & Stand',
+    title_en: 'Conference & Stand',
     client: 'BDP', 
-    category: '3D / Eventos', 
+    category_es: '3D / Eventos',
+    category_en: '3D / Event',
     year: '2025',
     image: '/assets/bdp-event.jpg',
-    description: 'Montaje de escenario y diseño de stand para eventos del Banco de Desarrollo Productivo, específicamente para "La Paz Expone 2025".'
+    description_es: 'Montaje de escenario y diseño de stand para eventos del Banco de Desarrollo Productivo, específicamente para "La Paz Expone 2025".',
+    description_en: 'Stage setup and stand design for Banco de Desarrollo Productivo events, specifically for "La Paz Expone 2025".'
   },
 ];
 
-const NAV_ITEMS = [
-  { label: 'Sobre mí', id: 'about' },
-  { label: 'Portafolio', id: 'portfolio' },
-  { label: 'Habilidades', id: 'skills' },
-  { label: 'Experiencia', id: 'experience' },
-  { label: 'Contacto', id: 'contact' },
-];
+const TEXT_CONTENT = {
+  es: {
+    nav: [
+      { label: 'Sobre mí', id: 'about' },
+      { label: 'Portafolio', id: 'portfolio' },
+      { label: 'Habilidades', id: 'skills' },
+      { label: 'Experiencia', id: 'experience' },
+      { label: 'Contacto', id: 'contact' },
+    ],
+    heroRole: "Portafolio de diseño gráfico 2025",
+    aboutTitle: "¡Hola!",
+    aboutLeft: "Soy un diseñador gráfico creativo, con 8 años de experiencia en agencias.",
+    aboutRight: "Tengo experiencia diseñando piezas tradicionales y digitales, buen ojo para el diseño, excelente ortografía y pasión por aprender.",
+    portfolioTitle: "PORTAFOLIO",
+    portfolioSubtitle: "Una selección de mis trabajos.",
+    skillsTitle: "HABILIDADES",
+    languagesTitle: "IDIOMAS",
+    langEs: "Español",
+    langEsDesc: "Idioma nativo",
+    langEn: "Inglés",
+    langEnDesc: "Nivel Avanzado (C2)",
+    experienceTitle: "EXPERIENCIA",
+    contactTitle: "¡CONTÁCTAME!",
+    emailLabel: "Correo",
+    phoneLabel: "Teléfono",
+    downloadCv: "Descargar CV",
+    graphicDesign: "Diseño Gráfico"
+  },
+  en: {
+    nav: [
+      { label: 'About', id: 'about' },
+      { label: 'Portfolio', id: 'portfolio' },
+      { label: 'Skills', id: 'skills' },
+      { label: 'Experience', id: 'experience' },
+      { label: 'Contact', id: 'contact' },
+    ],
+    heroRole: "Graphic Design Portfolio 2025",
+    aboutTitle: "Hello!",
+    aboutLeft: "I am a creative graphic designer with 8 years of agency experience.",
+    aboutRight: "I have experience designing traditional and digital pieces, a good eye for design, excellent spelling, and a passion for learning.",
+    portfolioTitle: "PORTFOLIO",
+    portfolioSubtitle: "A selection of my work.",
+    skillsTitle: "SKILLS",
+    languagesTitle: "LANGUAGES",
+    langEs: "Spanish",
+    langEsDesc: "Native",
+    langEn: "English",
+    langEnDesc: "Advanced (C2)",
+    experienceTitle: "EXPERIENCE",
+    contactTitle: "CONTACT ME!",
+    emailLabel: "Email",
+    phoneLabel: "Phone",
+    downloadCv: "Download CV",
+    graphicDesign: "Graphic Design"
+  }
+};
 
 // --- COMPONENTS ---
 
@@ -193,6 +314,27 @@ const App: React.FC = () => {
   const y = useTransform(scrollYProgress, [0, 1], [0, -50]);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const [language, setLanguage] = useState<'es' | 'en'>('es');
+
+  const t = TEXT_CONTENT[language];
+
+  // Transform data based on selected language
+  const projects = PROJECTS_DATA.map(p => ({
+    ...p,
+    title: language === 'es' ? p.title_es : p.title_en,
+    category: language === 'es' ? p.category_es : p.category_en,
+    description: language === 'es' ? p.description_es : p.description_en
+  }));
+
+  const skills = SKILLS_DATA.map(s => ({
+    ...s,
+    name: language === 'es' ? s.name_es : s.name_en
+  }));
+
+  const experience = EXPERIENCE_DATA.map(e => ({
+    ...e,
+    role: language === 'es' ? e.role_es : e.role_en
+  }));
 
   const scrollToSection = (id: string) => {
     setMobileMenuOpen(false);
@@ -207,14 +349,14 @@ const App: React.FC = () => {
 
   const navigateProject = (direction: 'next' | 'prev') => {
     if (!selectedProject) return;
-    const currentIndex = PROJECTS.findIndex(p => p.id === selectedProject.id);
+    const currentIndex = projects.findIndex(p => p.id === selectedProject.id);
     let nextIndex;
     if (direction === 'next') {
-      nextIndex = (currentIndex + 1) % PROJECTS.length;
+      nextIndex = (currentIndex + 1) % projects.length;
     } else {
-      nextIndex = (currentIndex - 1 + PROJECTS.length) % PROJECTS.length;
+      nextIndex = (currentIndex - 1 + projects.length) % projects.length;
     }
-    setSelectedProject(PROJECTS[nextIndex]);
+    setSelectedProject(projects[nextIndex]);
   };
 
   return (
@@ -224,17 +366,38 @@ const App: React.FC = () => {
       
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-[60] flex items-center justify-between px-6 md:px-12 py-6 bg-gradient-to-b from-black/90 to-transparent">
-        <div className="font-heading text-xl font-bold tracking-tighter text-white z-50">
-          <img 
-            src="/assets/greengo-doodle-01-standing.svg" 
-            alt="AV Logo" 
-            className="h-12 w-auto drop-shadow-md" 
-          />
+        <div className="flex items-center gap-6 z-50">
+          <div className="font-heading text-xl font-bold tracking-tighter text-white">
+            <img 
+              src="/assets/greengo-doodle-01-standing.svg" 
+              alt="AV Logo" 
+              className="h-12 w-auto drop-shadow-md" 
+            />
+          </div>
+
+          {/* Language Switcher */}
+          <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-3 py-1 rounded-full border border-white/10">
+             <button 
+               onClick={() => setLanguage('es')}
+               className={`text-xs font-bold transition-colors ${language === 'es' ? 'text-[#6BCB77]' : 'text-white hover:text-white/80'}`}
+               data-hover="true"
+             >
+               ES
+             </button>
+             <span className="text-white/30">|</span>
+             <button 
+               onClick={() => setLanguage('en')}
+               className={`text-xs font-bold transition-colors ${language === 'en' ? 'text-[#6BCB77]' : 'text-white hover:text-white/80'}`}
+               data-hover="true"
+             >
+               EN
+             </button>
+          </div>
         </div>
         
         {/* Desktop Menu */}
         <div className="hidden md:flex gap-10 text-sm font-bold tracking-widest uppercase">
-          {NAV_ITEMS.map((item) => (
+          {t.nav.map((item) => (
             <button 
               key={item.id} 
               onClick={() => scrollToSection(item.id)}
@@ -264,7 +427,7 @@ const App: React.FC = () => {
             exit={{ opacity: 0, y: -20 }}
             className="fixed inset-0 z-30 bg-[#282828]/95 backdrop-blur-xl flex flex-col items-center justify-center gap-8 md:hidden"
           >
-            {NAV_ITEMS.map((item) => (
+            {t.nav.map((item) => (
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
@@ -307,7 +470,7 @@ const App: React.FC = () => {
             transition={{ delay: 1, duration: 1 }}
             className="text-lg md:text-2xl font-light uppercase tracking-[0.3em] text-gray-300 relative z-20"
           >
-            Portafolio de diseño gráfico 2025
+            {t.heroRole}
           </motion.p>
         </motion.div>
         
@@ -338,9 +501,9 @@ const App: React.FC = () => {
                 {/* Mobile Pointer (Bottom) */}
                 <div className="md:hidden absolute -bottom-4 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[10px] border-l-transparent border-t-[20px] border-t-white border-r-[10px] border-r-transparent"></div>
 
-                <h3 className="text-xl font-bold mb-2 text-[#6BCB77]">¡Hola!</h3>
+                <h3 className="text-xl font-bold mb-2 text-[#6BCB77]">{t.aboutTitle}</h3>
                 <p className="text-base font-medium leading-relaxed">
-                  Soy un diseñador gráfico creativo, con 8 años de experiencia en agencias.
+                  {t.aboutLeft}
                 </p>
               </motion.div>
            </div>
@@ -375,7 +538,7 @@ const App: React.FC = () => {
                  <div className="md:hidden absolute -top-4 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[10px] border-l-transparent border-b-[20px] border-b-white border-r-[10px] border-r-transparent"></div>
 
                  <p className="text-base font-medium leading-relaxed">
-                  Tengo experiencia diseñando piezas tradicionales y digitales, buen ojo para el diseño, excelente ortografía y pasión por aprender.
+                  {t.aboutRight}
                 </p>
               </motion.div>
            </div>
@@ -392,15 +555,15 @@ const App: React.FC = () => {
           {/* Centered Header for Portfolio */}
           <div className="mb-16 text-center flex flex-col items-center">
             <h2 className="text-5xl md:text-8xl font-heading font-bold text-[#282828] leading-none mb-6">
-               PORTAFOLIO
+               {t.portfolioTitle}
             </h2>
             <p className="text-[#282828]/70 max-w-md text-lg">
-              Una selección de mis trabajos.
+              {t.portfolioSubtitle}
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {PROJECTS.map((project) => (
+            {projects.map((project) => (
               <ProjectCard key={project.id} project={project} onClick={() => setSelectedProject(project)} />
             ))}
           </div>
@@ -414,13 +577,13 @@ const App: React.FC = () => {
       >
          <div className="max-w-6xl mx-auto px-6">
             <div className="text-center mb-16">
-              <h2 className="text-3xl sm:text-4xl md:text-7xl font-heading font-bold text-white mb-4 break-words">HABILIDADES</h2>
+              <h2 className="text-3xl sm:text-4xl md:text-7xl font-heading font-bold text-white mb-4 break-words">{t.skillsTitle}</h2>
               <div className="w-24 h-2 bg-[#6BCB77] mx-auto rounded-full"></div>
             </div>
 
             {/* Software Skills Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-8 mb-16">
-                  {SKILLS.map((skill, idx) => (
+                  {skills.map((skill, idx) => (
                     <motion.div 
                       key={idx}
                       initial={{ opacity: 0, x: 20 }}
@@ -450,20 +613,20 @@ const App: React.FC = () => {
 
             {/* Languages - Moved to bottom */}
             <div className="bg-white/5 p-8 rounded-3xl border border-white/10">
-                <h3 className="text-2xl font-heading font-bold mb-8 text-[#6BCB77] text-center md:text-left">IDIOMAS</h3>
+                <h3 className="text-2xl font-heading font-bold mb-8 text-[#6BCB77] text-center md:text-left">{t.languagesTitle}</h3>
                 <div className="flex flex-col md:flex-row justify-around gap-8">
                   <div className="flex items-center gap-4 bg-white/5 p-4 rounded-xl flex-1">
                     <img src="/assets/flag-es.svg" alt="Español" className="w-12 h-12 rounded-full object-cover shrink-0 border-2 border-white/20" />
                     <div>
-                      <h4 className="font-bold text-lg">Español</h4>
-                      <p className="text-white/50 text-sm">Idioma nativo</p>
+                      <h4 className="font-bold text-lg">{t.langEs}</h4>
+                      <p className="text-white/50 text-sm">{t.langEsDesc}</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-4 bg-white/5 p-4 rounded-xl flex-1">
                     <img src="/assets/flag-en.svg" alt="Inglés" className="w-12 h-12 rounded-full object-cover shrink-0 border-2 border-white/20" />
                     <div>
-                      <h4 className="font-bold text-lg">Inglés</h4>
-                      <p className="text-white/50 text-sm">Nivel Avanzado (C2)</p>
+                      <h4 className="font-bold text-lg">{t.langEn}</h4>
+                      <p className="text-white/50 text-sm">{t.langEnDesc}</p>
                     </div>
                   </div>
                 </div>
@@ -478,12 +641,12 @@ const App: React.FC = () => {
       >
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl md:text-7xl font-heading font-bold text-[#282828] mb-4 break-words">EXPERIENCIA</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-7xl font-heading font-bold text-[#282828] mb-4 break-words">{t.experienceTitle}</h2>
             <div className="w-24 h-2 bg-[#6BCB77] mx-auto rounded-full"></div>
           </div>
 
           <div className="relative border-l-2 border-[#282828]/10 ml-4 md:ml-0 md:pl-0 space-y-12">
-             {EXPERIENCE.map((exp, idx) => (
+             {experience.map((exp, idx) => (
                <motion.div 
                  key={idx}
                  initial={{ opacity: 0, y: 20 }}
@@ -545,7 +708,7 @@ const App: React.FC = () => {
              <div className="flex-1 text-center md:text-left order-2 md:order-1">
                 <div className="inline-block relative mb-12">
                     <h2 className="text-3xl sm:text-4xl md:text-7xl font-heading font-bold text-white">
-                      ¡CONTÁCTAME!
+                      {t.contactTitle}
                     </h2>
                     <motion.div 
                        className="absolute -bottom-4 left-0 w-full h-4 bg-[#6BCB77]"
@@ -561,7 +724,7 @@ const App: React.FC = () => {
                           <Mail className="w-6 h-6" />
                        </div>
                        <div>
-                          <span className="block text-xs font-bold text-white/50 uppercase tracking-wider">Correo</span>
+                          <span className="block text-xs font-bold text-white/50 uppercase tracking-wider">{t.emailLabel}</span>
                           <span className="font-bold text-sm md:text-base break-all">augustovalverdegraphics@gmail.com</span>
                        </div>
                     </a>
@@ -571,7 +734,7 @@ const App: React.FC = () => {
                           <Phone className="w-6 h-6" />
                        </div>
                        <div>
-                          <span className="block text-xs font-bold text-white/50 uppercase tracking-wider">Teléfono</span>
+                          <span className="block text-xs font-bold text-white/50 uppercase tracking-wider">{t.phoneLabel}</span>
                           <span className="font-bold text-lg">+591 76518529</span>
                        </div>
                     </a>
@@ -592,7 +755,7 @@ const App: React.FC = () => {
            <div className="mt-16 pt-8 border-t border-white/10 flex justify-between items-center text-xs font-mono text-white/40">
               <span>© 2025 Augusto Valverde.</span>
               <a href="#" className="hover:text-white flex items-center gap-1">
-                 Descargar CV <Download className="w-3 h-3" />
+                 {t.downloadCv} <Download className="w-3 h-3" />
               </a>
            </div>
         </div>
@@ -689,7 +852,7 @@ const App: React.FC = () => {
                        {selectedProject.category}
                      </span>
                      <span className="px-3 py-1 border border-white/20 rounded-full text-xs uppercase tracking-wider text-white/60">
-                       Diseño Gráfico
+                       {t.graphicDesign}
                      </span>
                   </div>
                 </motion.div>
