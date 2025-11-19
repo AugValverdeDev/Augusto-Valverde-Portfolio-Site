@@ -298,7 +298,7 @@ const App: React.FC = () => {
               initial={{ opacity: 0, scale: 0.9, x: 20 }}
               animate={{ opacity: 1, scale: 1, x: 0 }}
               transition={{ delay: 1.5, duration: 0.8 }}
-              className="absolute left-1/2 -translate-x-1/2 -top-32 w-32 md:left-auto md:translate-x-0 md:-right-24 lg:-right-44 md:-bottom-12 md:top-auto md:w-48 z-10 pointer-events-none"
+              className="absolute left-1/2 -translate-x-1/2 -top-32 w-32 md:top-auto md:bottom-12 md:w-48 md:left-[85%] md:-translate-x-1/2"
             >
               <img 
                 src="/assets/greengo-doodle-01-standing-border.svg" 
