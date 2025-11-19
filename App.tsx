@@ -295,7 +295,7 @@ const App: React.FC = () => {
               className="absolute left-1/2 -translate-x-1/2 -top-24 w-32 md:left-auto md:translate-x-0 md:-right-44 md:bottom-4 md:top-auto md:w-48 z-10 pointer-events-none"
             >
               <img 
-                src="./assets/greengo-doodle-01-standing-border.svg" 
+                src="/assets/greengo-doodle-01-standing-border.svg" 
                 alt="Augusto Character" 
                 className="w-full h-full object-contain drop-shadow-2xl"
               />
