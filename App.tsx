@@ -226,7 +226,7 @@ const App: React.FC = () => {
       <nav className="fixed top-0 left-0 right-0 z-[60] flex items-center justify-between px-6 md:px-12 py-6 bg-gradient-to-b from-black/90 to-transparent">
         <div className="font-heading text-xl font-bold tracking-tighter text-white z-50">
           <img 
-            src="/assets/greengo-doodle-01-standing-border.svg" 
+            src="/assets/greengo-doodle-01-standing.svg" 
             alt="AV Logo" 
             className="h-12 w-auto drop-shadow-md" 
           />
@@ -284,15 +284,7 @@ const App: React.FC = () => {
           className="z-10 text-center flex flex-col items-center w-full max-w-6xl"
         >
           <div className="relative inline-block mt-12 md:mt-0 w-full flex justify-center">
-            <motion.h1 
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, ease: "easeOut" }}
-              className="text-[12vw] md:text-[8vw] leading-[0.8] font-heading font-bold text-white text-center relative z-20"
-            >
-              AUGUSTO <br/> VALVERDE
-            </motion.h1>
-            
+           
             {/* Character Positioned: Above Name on Mobile (overlapping, centered), Right of Name on Desktop */}
             <motion.div
               initial={{ opacity: 0, scale: 0.9, x: 20 }}
@@ -306,6 +298,17 @@ const App: React.FC = () => {
                 className="w-full h-full object-contain drop-shadow-2xl"
               />
             </motion.div>
+
+            <motion.h1 
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, ease: "easeOut" }}
+              className="text-[12vw] md:text-[8vw] leading-[0.8] font-heading font-bold text-white text-center relative z-20"
+            >
+              AUGUSTO <br/> VALVERDE
+            </motion.h1>
+            
+
           </div>
           
           <motion.div 
