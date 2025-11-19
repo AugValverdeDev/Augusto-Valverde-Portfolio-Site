@@ -25,10 +25,10 @@ const SKILLS: Skill[] = [
 ];
 
 const EXPERIENCE: Experience[] = [
-  { company: 'CloseUp Comunicaciones', role: 'Diseñador gráfico', period: '2025' },
-  { company: 'Native Media Work', role: 'Diseñador gráfico', period: '2024' },
-  { company: 'Vintage Publicidad', role: 'Diseñador gráfico', period: '2017 - 2023' },
-  { company: 'Parabola Studios', role: 'Diseñador gráfico', period: '2015' },
+  { company: 'CloseUp Comunicaciones', role: 'Diseñador gráfico', period: '2025', logo: 'assets/logo-closeup.png' },
+  { company: 'Native Media Work', role: 'Diseñador gráfico', period: '2024', logo: 'assets/logo-native.png' },
+  { company: 'Vintage Publicidad', role: 'Diseñador gráfico', period: '2017 - 2023', logo: 'assets/logo-vintage.png' },
+  { company: 'Parabola Studios', role: 'Diseñador gráfico', period: '2015', logo: 'assets/logo-pba.png' },
 ];
 
 const PROJECTS: Project[] = [
@@ -215,12 +215,12 @@ const App: React.FC = () => {
       <FluidBackground />
       
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-40 flex items-center justify-between px-6 md:px-12 py-6 mix-blend-difference">
+      <nav className="fixed top-0 left-0 right-0 z-[60] flex items-center justify-between px-6 md:px-12 py-6 bg-gradient-to-b from-black/90 to-transparent">
         <div className="font-heading text-xl font-bold tracking-tighter text-white z-50">AV.</div>
         
         {/* Desktop Menu */}
         <div className="hidden md:flex gap-10 text-sm font-bold tracking-widest uppercase">
-          {['About', 'Skills', 'Experience', 'Portfolio', 'Contact'].map((item) => (
+          {['About', 'Portfolio', 'Skills', 'Experience', 'Contact'].map((item) => (
             <button 
               key={item} 
               onClick={() => scrollToSection(item.toLowerCase())}
@@ -250,7 +250,7 @@ const App: React.FC = () => {
             exit={{ opacity: 0, y: -20 }}
             className="fixed inset-0 z-30 bg-[#282828]/95 backdrop-blur-xl flex flex-col items-center justify-center gap-8 md:hidden"
           >
-            {['About', 'Skills', 'Experience', 'Portfolio', 'Contact'].map((item) => (
+            {['About', 'Portfolio', 'Skills', 'Experience', 'Contact'].map((item) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item.toLowerCase())}
@@ -263,13 +263,13 @@ const App: React.FC = () => {
         )}
       </AnimatePresence>
 
-      {/* HERO SECTION */}
+      {/* 1. HERO SECTION (Dark) */}
       <header className="relative h-screen flex flex-col items-center justify-center overflow-hidden px-4 pb-20">
         <motion.div 
           style={{ y }}
           className="z-10 text-center flex flex-col items-center w-full max-w-6xl"
         >
-          <div className="relative">
+          <div className="relative inline-block mt-12 md:mt-0">
             <motion.h1 
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
@@ -279,17 +279,17 @@ const App: React.FC = () => {
               AUGUSTO <br/> VALVERDE
             </motion.h1>
             
-            {/* Character Positioned right next to Name */}
+            {/* Character Positioned: Above Name on Mobile (overlapping), Right of Name on Desktop */}
             <motion.div
               initial={{ opacity: 0, scale: 0.9, x: 20 }}
               animate={{ opacity: 1, scale: 1, x: 0 }}
               transition={{ delay: 1.5, duration: 0.8 }}
-              className="absolute -right-20 md:-right-32 bottom-0 md:bottom-4 z-10 pointer-events-none"
+              className="absolute left-1/2 -translate-x-1/2 -top-24 w-32 md:left-auto md:translate-x-0 md:-right-44 md:bottom-4 md:top-auto md:w-48 z-10 pointer-events-none"
             >
               <img 
                 src="./assets/greengo-doodle-01-standing.svg" 
                 alt="Augusto Character" 
-                className="w-24 md:w-40 lg:w-48 object-contain drop-shadow-2xl"
+                className="w-full h-full object-contain drop-shadow-2xl"
               />
             </motion.div>
           </div>
@@ -321,7 +321,7 @@ const App: React.FC = () => {
         </motion.div>
       </header>
 
-      {/* ABOUT SECTION */}
+      {/* 2. ABOUT SECTION (Dark) */}
       <section id="about" className="relative z-10 pb-40 pt-20 bg-[#282828]">
         <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-center gap-8 md:gap-4">
            
@@ -383,48 +383,35 @@ const App: React.FC = () => {
         </div>
       </section>
 
-      {/* EXPERIENCE SECTION (Light) with Curved Top */}
+      {/* 3. PORTFOLIO GRID (Light) */}
       <section 
-        id="experience" 
+        id="portfolio" 
         className="relative z-20 pt-32 pb-40 bg-[#F0F4F8] text-[#282828] rounded-t-[3rem] md:rounded-t-[5rem] -mt-20 shadow-[0_-20px_60px_rgba(0,0,0,0.5)]"
       >
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl md:text-7xl font-heading font-bold text-[#282828] mb-4 break-words">EXPERIENCIA</h2>
-            <div className="w-24 h-2 bg-[#6BCB77] mx-auto rounded-full"></div>
+        <div className="max-w-[1600px] mx-auto px-4 md:px-6">
+          <div className="mb-16 text-center md:text-left md:flex justify-between items-end">
+            <div>
+               <h2 className="text-3xl sm:text-4xl md:text-8xl font-heading font-bold text-[#282828] leading-none">
+                 PORTAFOLIO
+               </h2>
+            </div>
+            <p className="text-[#282828]/70 max-w-md mt-6 md:mt-0 text-lg">
+              A selection of brand campaigns, key visuals, and digital experiences.
+            </p>
           </div>
 
-          <div className="relative border-l-2 border-[#282828]/10 ml-4 md:ml-0 md:pl-0 space-y-12">
-             {EXPERIENCE.map((exp, idx) => (
-               <motion.div 
-                 key={idx}
-                 initial={{ opacity: 0, y: 20 }}
-                 whileInView={{ opacity: 1, y: 0 }}
-                 viewport={{ once: true }}
-                 transition={{ delay: idx * 0.1 }}
-                 className="md:flex items-center gap-8 relative group"
-               >
-                 {/* Timeline Dot */}
-                 <div className="absolute left-[-9px] top-0 md:relative md:left-auto md:top-auto w-4 h-4 bg-[#6BCB77] rounded-full border-4 border-[#F0F4F8] group-hover:scale-150 transition-transform"></div>
-                 
-                 {/* Content */}
-                 <div className="ml-8 md:ml-0 flex-1 bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-                    <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
-                      <h3 className="text-xl font-bold font-heading">{exp.company}</h3>
-                      <span className="text-sm font-mono text-[#6BCB77] font-bold bg-[#6BCB77]/10 px-3 py-1 rounded-full w-fit">{exp.period}</span>
-                    </div>
-                    <p className="text-gray-500">{exp.role}</p>
-                 </div>
-               </motion.div>
-             ))}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {PROJECTS.map((project) => (
+              <ProjectCard key={project.id} project={project} onClick={() => setSelectedProject(project)} />
+            ))}
           </div>
         </div>
       </section>
 
-      {/* SKILLS SECTION (Dark) with Curved Top */}
+      {/* 4. SKILLS SECTION (Dark) */}
       <section 
         id="skills" 
-        className="relative z-30 pt-32 pb-40 bg-[#282828] rounded-t-[3rem] md:rounded-t-[5rem] -mt-20 shadow-[0_-20px_60px_rgba(0,0,0,0.2)]"
+        className="relative z-30 pt-32 pb-40 bg-[#282828] text-white rounded-t-[3rem] md:rounded-t-[5rem] -mt-20 shadow-[0_-20px_60px_rgba(0,0,0,0.2)]"
       >
          <div className="max-w-6xl mx-auto px-6">
             <div className="text-center mb-16">
@@ -467,14 +454,14 @@ const App: React.FC = () => {
                 <h3 className="text-2xl font-heading font-bold mb-8 text-[#6BCB77] text-center md:text-left">IDIOMAS</h3>
                 <div className="flex flex-col md:flex-row justify-around gap-8">
                   <div className="flex items-center gap-4 bg-white/5 p-4 rounded-xl flex-1">
-                    <div className="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center text-xl font-bold text-black shrink-0">ES</div>
+                    <img src="assets/flag-es.png" alt="Español" className="w-12 h-12 rounded-full object-cover shrink-0 border-2 border-white/20" />
                     <div>
                       <h4 className="font-bold text-lg">Español</h4>
                       <p className="text-white/50 text-sm">Idioma nativo</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-4 bg-white/5 p-4 rounded-xl flex-1">
-                    <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-xl font-bold text-white shrink-0">EN</div>
+                    <img src="assets/flag-en.png" alt="Inglés" className="w-12 h-12 rounded-full object-cover shrink-0 border-2 border-white/20" />
                     <div>
                       <h4 className="font-bold text-lg">Inglés</h4>
                       <p className="text-white/50 text-sm">Nivel Avanzado (C2)</p>
@@ -485,81 +472,123 @@ const App: React.FC = () => {
          </div>
       </section>
 
-      {/* PORTFOLIO GRID (Light) with Curved Top */}
-      {/* Changed background to Light and text to Dark */}
+      {/* 5. EXPERIENCE SECTION (Light) */}
       <section 
-        id="portfolio" 
+        id="experience" 
         className="relative z-40 pt-32 pb-40 bg-[#F0F4F8] text-[#282828] rounded-t-[3rem] md:rounded-t-[5rem] -mt-20 shadow-[0_-20px_60px_rgba(0,0,0,0.5)]"
       >
-        <div className="max-w-[1600px] mx-auto px-4 md:px-6">
-          <div className="mb-16 text-center md:text-left md:flex justify-between items-end">
-            <div>
-               <h2 className="text-3xl sm:text-4xl md:text-7xl font-heading font-bold text-[#282828] leading-none">
-                 PORTAFOLIO
-               </h2>
-            </div>
-            <p className="text-[#282828]/70 max-w-md mt-6 md:mt-0 text-lg">
-              A selection of brand campaigns, key visuals, and digital experiences.
-            </p>
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-7xl font-heading font-bold text-[#282828] mb-4 break-words">EXPERIENCIA</h2>
+            <div className="w-24 h-2 bg-[#6BCB77] mx-auto rounded-full"></div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {PROJECTS.map((project) => (
-              <ProjectCard key={project.id} project={project} onClick={() => setSelectedProject(project)} />
-            ))}
+          <div className="relative border-l-2 border-[#282828]/10 ml-4 md:ml-0 md:pl-0 space-y-12">
+             {EXPERIENCE.map((exp, idx) => (
+               <motion.div 
+                 key={idx}
+                 initial={{ opacity: 0, y: 20 }}
+                 whileInView={{ opacity: 1, y: 0 }}
+                 viewport={{ once: true }}
+                 transition={{ delay: idx * 0.1 }}
+                 className="md:flex items-center gap-8 relative group"
+               >
+                 {/* Timeline Dot */}
+                 <div className="absolute left-[-9px] top-0 md:relative md:left-auto md:top-auto w-4 h-4 bg-[#6BCB77] rounded-full border-4 border-[#F0F4F8] group-hover:scale-150 transition-transform"></div>
+                 
+                 {/* Content */}
+                 <div className="ml-8 md:ml-0 flex-1 bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow flex flex-col sm:flex-row items-start sm:items-center gap-6">
+                    {/* Logo */}
+                    {exp.logo && (
+                      <div className="w-16 h-16 flex-shrink-0 bg-gray-50 rounded-full overflow-hidden flex items-center justify-center p-1 border border-gray-100">
+                          <img src={exp.logo} alt={exp.company} className="w-full h-full object-contain rounded-full" />
+                      </div>
+                    )}
+                    
+                    <div className="flex-1 w-full">
+                      <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
+                        <h3 className="text-xl font-bold font-heading">{exp.company}</h3>
+                        <span className="text-sm font-mono text-[#6BCB77] font-bold bg-[#6BCB77]/10 px-3 py-1 rounded-full w-fit mt-2 md:mt-0">{exp.period}</span>
+                      </div>
+                      <p className="text-gray-500">{exp.role}</p>
+                    </div>
+                 </div>
+               </motion.div>
+             ))}
           </div>
         </div>
       </section>
 
-      {/* CONTACT FOOTER (Dark) with Curved Top */}
-      {/* Swapped to Dark background with White Text */}
+      {/* 6. CONTACT FOOTER (Dark) */}
       <footer 
         id="contact" 
         className="relative z-50 py-24 bg-[#282828] text-white rounded-t-[3rem] md:rounded-t-[5rem] -mt-20 shadow-[0_-20px_60px_rgba(0,0,0,0.5)]"
       >
-        <div className="max-w-4xl mx-auto px-6 text-center">
-           <div className="inline-block relative mb-12">
-              <h2 className="text-3xl sm:text-4xl md:text-7xl font-heading font-bold text-white">
-                ¡CONTÁCTAME!
-              </h2>
-              <motion.div 
-                 className="absolute -bottom-4 left-0 w-full h-4 bg-[#6BCB77]"
-                 initial={{ scaleX: 0 }}
-                 whileInView={{ scaleX: 1 }}
-                 viewport={{ once: true }}
-              />
+        <div className="max-w-6xl mx-auto px-6 text-center">
+           
+           <div className="flex flex-col md:flex-row items-center justify-center gap-12 mb-12">
+             
+             {/* Phone Character - Top on Mobile, Right on Desktop */}
+             <motion.div 
+               className="order-1 md:order-2"
+               initial={{ opacity: 0, scale: 0.8 }}
+               whileInView={{ opacity: 1, scale: 1 }}
+               viewport={{ once: true }}
+             >
+                <img 
+                  src="./assets/greengo-doodle-05-phone.svg" 
+                  alt="Phone Character" 
+                  className="w-48 md:w-64 object-contain"
+                />
+             </motion.div>
+
+             {/* Contact Info - Bottom on Mobile, Left on Desktop */}
+             <div className="flex-1 text-center md:text-left order-2 md:order-1">
+                <div className="inline-block relative mb-12">
+                    <h2 className="text-3xl sm:text-4xl md:text-7xl font-heading font-bold text-white">
+                      ¡CONTÁCTAME!
+                    </h2>
+                    <motion.div 
+                       className="absolute -bottom-4 left-0 w-full h-4 bg-[#6BCB77]"
+                       initial={{ scaleX: 0 }}
+                       whileInView={{ scaleX: 1 }}
+                       viewport={{ once: true }}
+                    />
+                 </div>
+
+                 <div className="grid md:grid-cols-2 gap-8 mb-16 text-left max-w-2xl mx-auto md:mx-0">
+                    <a href="mailto:augustovalverdegraphics@gmail.com" className="flex items-center gap-4 p-4 rounded-xl hover:bg-white/5 transition-colors group border border-white/10">
+                       <div className="bg-white text-[#282828] p-3 rounded-full group-hover:bg-[#6BCB77] group-hover:text-black transition-colors">
+                          <Mail className="w-6 h-6" />
+                       </div>
+                       <div>
+                          <span className="block text-xs font-bold text-white/50 uppercase tracking-wider">Email</span>
+                          <span className="font-bold text-sm md:text-base break-all">augustovalverdegraphics@gmail.com</span>
+                       </div>
+                    </a>
+
+                    <a href="tel:+59176518529" className="flex items-center gap-4 p-4 rounded-xl hover:bg-white/5 transition-colors group border border-white/10">
+                       <div className="bg-white text-[#282828] p-3 rounded-full group-hover:bg-[#6BCB77] group-hover:text-black transition-colors">
+                          <Phone className="w-6 h-6" />
+                       </div>
+                       <div>
+                          <span className="block text-xs font-bold text-white/50 uppercase tracking-wider">Phone</span>
+                          <span className="font-bold text-lg">+591 76518529</span>
+                       </div>
+                    </a>
+                 </div>
+
+                 <div className="flex justify-center md:justify-start gap-6">
+                    <a href="#" className="bg-white text-[#282828] px-8 py-4 rounded-full font-bold uppercase tracking-widest hover:bg-[#6BCB77] hover:text-black transition-colors flex items-center gap-2">
+                       <Linkedin className="w-5 h-5" /> LinkedIn
+                    </a>
+                    <a href="#" className="bg-white text-[#282828] px-8 py-4 rounded-full font-bold uppercase tracking-widest hover:bg-[#6BCB77] hover:text-black transition-colors flex items-center gap-2">
+                       <Globe className="w-5 h-5" /> Behance
+                    </a>
+                 </div>
+             </div>
            </div>
 
-           <div className="grid md:grid-cols-2 gap-8 mb-16 text-left max-w-2xl mx-auto">
-              <a href="mailto:augustovalverdegraphics@gmail.com" className="flex items-center gap-4 p-4 rounded-xl hover:bg-white/5 transition-colors group border border-white/10">
-                 <div className="bg-white text-[#282828] p-3 rounded-full group-hover:bg-[#6BCB77] group-hover:text-black transition-colors">
-                    <Mail className="w-6 h-6" />
-                 </div>
-                 <div>
-                    <span className="block text-xs font-bold text-white/50 uppercase tracking-wider">Email</span>
-                    <span className="font-bold text-sm md:text-base break-all">augustovalverdegraphics@gmail.com</span>
-                 </div>
-              </a>
-
-              <a href="tel:+59176518529" className="flex items-center gap-4 p-4 rounded-xl hover:bg-white/5 transition-colors group border border-white/10">
-                 <div className="bg-white text-[#282828] p-3 rounded-full group-hover:bg-[#6BCB77] group-hover:text-black transition-colors">
-                    <Phone className="w-6 h-6" />
-                 </div>
-                 <div>
-                    <span className="block text-xs font-bold text-white/50 uppercase tracking-wider">Phone</span>
-                    <span className="font-bold text-lg">+591 76518529</span>
-                 </div>
-              </a>
-           </div>
-
-           <div className="flex justify-center gap-6">
-              <a href="#" className="bg-white text-[#282828] px-8 py-4 rounded-full font-bold uppercase tracking-widest hover:bg-[#6BCB77] hover:text-black transition-colors flex items-center gap-2">
-                 <Linkedin className="w-5 h-5" /> LinkedIn
-              </a>
-              <a href="#" className="bg-white text-[#282828] px-8 py-4 rounded-full font-bold uppercase tracking-widest hover:bg-[#6BCB77] hover:text-black transition-colors flex items-center gap-2">
-                 <Globe className="w-5 h-5" /> Behance
-              </a>
-           </div>
            
            <div className="mt-16 pt-8 border-t border-white/10 flex justify-between items-center text-xs font-mono text-white/40">
               <span>© 2025 Augusto Valverde.</span>
@@ -578,7 +607,7 @@ const App: React.FC = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={() => setSelectedProject(null)}
-            className="fixed inset-0 z-[60] flex items-center justify-center p-4 bg-black/80 backdrop-blur-md cursor-auto"
+            className="fixed inset-0 z-[70] flex items-center justify-center p-4 bg-black/80 backdrop-blur-md cursor-auto"
           >
             <motion.div
               initial={{ scale: 0.9, y: 20 }}
