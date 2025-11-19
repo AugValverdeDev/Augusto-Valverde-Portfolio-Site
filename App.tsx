@@ -25,10 +25,10 @@ const SKILLS: Skill[] = [
 ];
 
 const EXPERIENCE: Experience[] = [
-  { company: 'CloseUp Comunicaciones', role: 'Diseñador gráfico', period: '2025', logo: './assets/logo-closeup.png' },
-  { company: 'Native Media Work', role: 'Diseñador gráfico', period: '2024', logo: './assets/logo-native.png' },
-  { company: 'Vintage Publicidad', role: 'Diseñador gráfico', period: '2017 - 2023', logo: './assets/logo-vintage.png' },
-  { company: 'Parabola Studios', role: 'Diseñador gráfico', period: '2015', logo: './assets/logo-pba.png' },
+  { company: 'CloseUp Comunicaciones', role: 'Diseñador gráfico', period: '2025', logo: '/assets/logo-closeup.png' },
+  { company: 'Native Media Work', role: 'Diseñador gráfico', period: '2024', logo: '/assets/logo-native.png' },
+  { company: 'Vintage Publicidad', role: 'Diseñador gráfico', period: '2017 - 2023', logo: '/assets/logo-vintage.png' },
+  { company: 'Parabola Studios', role: 'Diseñador gráfico', period: '2015', logo: '/assets/logo-pba.png' },
 ];
 
 const PROJECTS: Project[] = [
@@ -454,14 +454,14 @@ const App: React.FC = () => {
                 <h3 className="text-2xl font-heading font-bold mb-8 text-[#6BCB77] text-center md:text-left">IDIOMAS</h3>
                 <div className="flex flex-col md:flex-row justify-around gap-8">
                   <div className="flex items-center gap-4 bg-white/5 p-4 rounded-xl flex-1">
-                    <img src="./assets/flag-es.png" alt="Español" className="w-12 h-12 rounded-full object-cover shrink-0 border-2 border-white/20" />
+                    <img src="/assets/flag-es.png" alt="Español" className="w-12 h-12 rounded-full object-cover shrink-0 border-2 border-white/20" />
                     <div>
                       <h4 className="font-bold text-lg">Español</h4>
                       <p className="text-white/50 text-sm">Idioma nativo</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-4 bg-white/5 p-4 rounded-xl flex-1">
-                    <img src="./assets/flag-en.png" alt="Inglés" className="w-12 h-12 rounded-full object-cover shrink-0 border-2 border-white/20" />
+                    <img src="/assets/flag-en.png" alt="Inglés" className="w-12 h-12 rounded-full object-cover shrink-0 border-2 border-white/20" />
                     <div>
                       <h4 className="font-bold text-lg">Inglés</h4>
                       <p className="text-white/50 text-sm">Nivel Avanzado (C2)</p>
