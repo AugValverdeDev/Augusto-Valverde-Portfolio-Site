@@ -11,14 +11,6 @@ import CustomCursor from './components/CustomCursor';
 import ProjectCard from './components/ArtistCard';
 import { Project, Skill, Experience } from './types';
 
-import logoVintage from "/src/assets/logo-vintage.png";
-import logoCloseUp from "/src/assets/logo-closeup.png";
-import logoNative from "/src/assets/logo-native.png";
-import logoPBA from "/src/assets/logo-pba.png";
-
-import flagEn from "/src/assets/flag-en.png";
-import flagEs from "/src/assets/flag-es.png";
-
 // --- DATA ---
 
 const SKILLS: Skill[] = [
@@ -33,10 +25,10 @@ const SKILLS: Skill[] = [
 ];
 
 const EXPERIENCE: Experience[] = [
-  { company: 'CloseUp Comunicaciones', role: 'Diseñador gráfico', period: '2025', logo: logoCloseUp },
-  { company: 'Native Media Work', role: 'Diseñador gráfico', period: '2024', logo: logoNative },
-  { company: 'Vintage Publicidad', role: 'Diseñador gráfico', period: '2017 - 2023', logo: logoVintage },
-  { company: 'Parabola Studios', role: 'Diseñador gráfico', period: '2015', logo: logoPBA },
+  { company: 'CloseUp Comunicaciones', role: 'Diseñador gráfico', period: '2025', logo: '/assets/logo-closeup.png' },
+  { company: 'Native Media Work', role: 'Diseñador gráfico', period: '2024', logo: '/assets/logo-native.png' },
+  { company: 'Vintage Publicidad', role: 'Diseñador gráfico', period: '2017 - 2023', logo: '/assets/logo-vintage.png' },
+  { company: 'Parabola Studios', role: 'Diseñador gráfico', period: '2015', logo: '/assets/logo-pba.png' },
 ];
 
 const PROJECTS: Project[] = [
@@ -44,55 +36,55 @@ const PROJECTS: Project[] = [
     id: '1', 
     title: 'Key Visuals', 
     client: 'ASTRIX', 
-    category: 'Campaign', 
+    category: 'Campaña', 
     year: '2024',
-    image: 'assets/astrix-kv.jpg',
-    description: 'Key visual design for Astrix product lines (OLA, LIZ). Focus on vibrant product compositing and high-impact visuals.'
+    image: '/assets/astrix-kv.jpg',
+    description: 'Diseño de Key Visuals para líneas de productos Astrix (OLA, LIZ). Enfoque en composición vibrante de productos y visuales de alto impacto.'
   },
   { 
     id: '2', 
     title: 'Contenido RRSS', 
     client: 'ASTRIX', 
-    category: 'Social Media', 
+    category: 'Redes Sociales', 
     year: '2024',
-    image: 'assets/astrix-rrss.jpg',
-    description: 'Social media content strategy for OLA and LIZ brands, featuring "Gala es el mejor shampoo" and meme-style engagement posts.'
+    image: '/assets/astrix-rrss.jpg',
+    description: 'Estrategia de contenido para redes sociales de marcas OLA y LIZ, destacando "Gala es el mejor shampoo" y posts de engagement estilo meme.'
   },
   { 
     id: '3', 
     title: 'Key Visuals Retail', 
     client: 'KETAL', 
-    category: 'Campaign', 
+    category: 'Campaña', 
     year: '2023',
-    image: 'assets/ketal-kv.jpg',
-    description: 'Retail marketing visuals for Ketal Hipermercados, including "2do Aguinaldo" and "Amiga nos quedamos sin piqueos".'
+    image: '/assets/ketal-kv.jpg',
+    description: 'Visuales de marketing retail para Ketal Hipermercados, incluyendo "2do Aguinaldo" y "Amiga nos quedamos sin piqueos".'
   },
   { 
     id: '4', 
     title: 'Campañas Mensuales', 
     client: 'KETAL', 
-    category: 'Illustration', 
+    category: 'Ilustración', 
     year: '2023',
-    image: 'assets/ketal-campaign.jpg',
-    description: 'Character design and thematic monthly campaigns, featuring the "Mayo Espectacular" superhero concept.'
+    image: '/assets/ketal-campaign.jpg',
+    description: 'Diseño de personajes y campañas mensuales temáticas, presentando el concepto de superhéroe "Mayo Espectacular".'
   },
   { 
     id: '5', 
     title: 'Guerreros Solidarios', 
     client: 'La Boliviana Ciacruz', 
-    category: 'Campaign', 
+    category: 'Campaña', 
     year: '2023',
-    image: 'assets/lbc-guerreros.jpg',
-    description: 'Art direction for the "Guerreros Solidarios" campaign, highlighting stories of courage, nobility, and strength.'
+    image: '/assets/lbc-guerreros.jpg',
+    description: 'Dirección de arte para la campaña "Guerreros Solidarios", destacando historias de coraje, nobleza y fortaleza.'
   },
   { 
     id: '6', 
     title: 'Contenido RRSS', 
     client: 'La Boliviana Ciacruz', 
-    category: 'Social Media', 
+    category: 'Redes Sociales', 
     year: '2023',
-    image: 'assets/lbc-rrss.jpg',
-    description: 'Comprehensive social media management for insurance products (Auto, Hogar) with a clean, corporate aesthetic.'
+    image: '/assets/lbc-rrss.jpg',
+    description: 'Gestión integral de redes sociales para productos de seguros (Auto, Hogar) con una estética limpia y corporativa.'
   },
   { 
     id: '7', 
@@ -100,62 +92,62 @@ const PROJECTS: Project[] = [
     client: 'AXS', 
     category: 'Branding', 
     year: '2024',
-    image: 'assets/axs-corp.jpg',
-    description: 'High-tech corporate advertising visuals for AXS, emphasizing connectivity, speed, and future tech.'
+    image: '/assets/axs-corp.jpg',
+    description: 'Visuales publicitarios corporativos de alta tecnología para AXS, enfatizando conectividad, velocidad y tecnología futura.'
   },
   { 
     id: '8', 
     title: 'Social Media & Promo', 
     client: 'AXS', 
-    category: 'Social Media', 
+    category: 'Redes Sociales', 
     year: '2024',
-    image: 'assets/axs-rrss.jpg',
-    description: 'Dynamic social media designs for internet plans, "El Poder de 1 Bs", and streaming service promotions.'
+    image: '/assets/axs-rrss.jpg',
+    description: 'Diseños dinámicos para redes sociales de planes de internet, "El Poder de 1 Bs" y promociones de servicios de streaming.'
   },
   { 
     id: '9', 
     title: 'Branding & Souvenirs', 
     client: 'AXS', 
-    category: 'Merch', 
+    category: 'Merchandising', 
     year: '2024',
-    image: 'assets/axs-branding.jpg',
-    description: 'Merchandise design including T-shirts, mugs, and packaging for corporate events and carnival sponsorships.'
+    image: '/assets/axs-branding.jpg',
+    description: 'Diseño de merchandising incluyendo camisetas, tazas y packaging para eventos corporativos y patrocinios de carnaval.'
   },
   { 
     id: '10', 
     title: 'Diseño de Stands', 
     client: 'AXS', 
-    category: '3D / Event', 
+    category: '3D / Eventos', 
     year: '2024',
-    image: 'assets/axs-stands.jpg',
-    description: '3D visualization and spatial design for AXS experience centers and commercial stands.'
+    image: '/assets/axs-stands.jpg',
+    description: 'Visualización 3D y diseño espacial para centros de experiencia y stands comerciales de AXS.'
   },
   { 
     id: '11', 
     title: 'Stickers WhatsApp', 
     client: 'AXS', 
-    category: 'Illustration', 
+    category: 'Ilustración', 
     year: '2024',
-    image: 'assets/axs-stickers.jpg',
-    description: 'Custom illustration set for WhatsApp stickers used in digital marketing and customer service.'
+    image: '/assets/axs-stickers.jpg',
+    description: 'Set de ilustraciones personalizadas para stickers de WhatsApp utilizados en marketing digital y servicio al cliente.'
   },
   { 
     id: '12', 
     title: 'Dental Social Media', 
     client: 'INNOVASALUD', 
-    category: 'Social Media', 
+    category: 'Redes Sociales', 
     year: '2024',
-    image: 'assets/innovasalud.jpg',
-    description: 'Clean, approachable social media graphics for dental health services, whitening campaigns, and seasonal posts.'
+    image: '/assets/innovasalud.jpg',
+    description: 'Gráficos limpios y accesibles para redes sociales de servicios de salud dental, campañas de blanqueamiento y publicaciones estacionales.'
   },
   { 
     id: '13', 
     title: 'Salvar Los Bosques', 
     client: 'PRO PACHA', 
-    category: 'Campaign', 
+    category: 'Campaña', 
     year: '2023',
-    image: 'assets/propacha.jpg',
-    description: 'Environmental awareness campaign "Juntos podemos salvar los bosques" featuring volunteer firefighters and nature photography.'
+    image: '/assets/propacha.jpg',
+    description: 'Campaña de conciencia ambiental "Juntos podemos salvar los bosques" presentando bomberos voluntarios y fotografía de naturaleza.'
   },
   { 
     id: '14', 
@@ -163,27 +155,35 @@ const PROJECTS: Project[] = [
     client: 'ATB', 
     category: '3D / Set Design', 
     year: '2024',
-    image: 'assets/atb-set.jpg',
-    description: 'Virtual set redesign for the TV program "Mi Casa Es Tu Casa", created in Blender/Cinema 4D.'
+    image: '/assets/atb-set.jpg',
+    description: 'Rediseño de set virtual para el programa de TV "Mi Casa Es Tu Casa", creado en Blender/Cinema 4D.'
   },
   { 
     id: '15', 
     title: 'Activación Expofarma', 
     client: 'BAGÓ', 
-    category: 'Event', 
+    category: 'Eventos', 
     year: '2025',
-    image: 'assets/bago-expofarma.jpg',
-    description: 'Event activation booth design for Refrianex at Expofarma 2025, featuring interactive photo zones.'
+    image: '/assets/bago-expofarma.jpg',
+    description: 'Diseño de stand de activación para Refrianex en Expofarma 2025, con zonas de fotos interactivas.'
   },
   { 
     id: '16', 
     title: 'Conferencia & Stand', 
     client: 'BDP', 
-    category: '3D / Event', 
+    category: '3D / Eventos', 
     year: '2025',
-    image: 'assets/bdp-event.jpg',
-    description: 'Stage setup and stand design for Banco de Desarrollo Productivo events, specifically for "La Paz Expone 2025".'
+    image: '/assets/bdp-event.jpg',
+    description: 'Montaje de escenario y diseño de stand para eventos del Banco de Desarrollo Productivo, específicamente para "La Paz Expone 2025".'
   },
+];
+
+const NAV_ITEMS = [
+  { label: 'Sobre mí', id: 'about' },
+  { label: 'Portafolio', id: 'portfolio' },
+  { label: 'Habilidades', id: 'skills' },
+  { label: 'Experiencia', id: 'experience' },
+  { label: 'Contacto', id: 'contact' },
 ];
 
 // --- COMPONENTS ---
@@ -224,18 +224,24 @@ const App: React.FC = () => {
       
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-[60] flex items-center justify-between px-6 md:px-12 py-6 bg-gradient-to-b from-black/90 to-transparent">
-        <div className="font-heading text-xl font-bold tracking-tighter text-white z-50">AV.</div>
+        <div className="font-heading text-xl font-bold tracking-tighter text-white z-50">
+          <img 
+            src="/assets/greengo-doodle-01-standing-border.svg" 
+            alt="AV Logo" 
+            className="h-12 w-auto drop-shadow-md" 
+          />
+        </div>
         
         {/* Desktop Menu */}
         <div className="hidden md:flex gap-10 text-sm font-bold tracking-widest uppercase">
-          {['About', 'Portfolio', 'Skills', 'Experience', 'Contact'].map((item) => (
+          {NAV_ITEMS.map((item) => (
             <button 
-              key={item} 
-              onClick={() => scrollToSection(item.toLowerCase())}
+              key={item.id} 
+              onClick={() => scrollToSection(item.id)}
               className="hover:text-[#6BCB77] transition-colors text-white cursor-pointer bg-transparent border-none"
               data-hover="true"
             >
-              {item}
+              {item.label}
             </button>
           ))}
         </div>
@@ -258,13 +264,13 @@ const App: React.FC = () => {
             exit={{ opacity: 0, y: -20 }}
             className="fixed inset-0 z-30 bg-[#282828]/95 backdrop-blur-xl flex flex-col items-center justify-center gap-8 md:hidden"
           >
-            {['About', 'Portfolio', 'Skills', 'Experience', 'Contact'].map((item) => (
+            {NAV_ITEMS.map((item) => (
               <button
-                key={item}
-                onClick={() => scrollToSection(item.toLowerCase())}
+                key={item.id}
+                onClick={() => scrollToSection(item.id)}
                 className="text-3xl font-heading font-bold text-white hover:text-[#6BCB77] transition-colors uppercase bg-transparent border-none"
               >
-                {item}
+                {item.label}
               </button>
             ))}
           </motion.div>
@@ -277,22 +283,22 @@ const App: React.FC = () => {
           style={{ y }}
           className="z-10 text-center flex flex-col items-center w-full max-w-6xl"
         >
-          <div className="relative inline-block mt-12 md:mt-0">
+          <div className="relative inline-block mt-12 md:mt-0 w-full flex justify-center">
             <motion.h1 
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, ease: "easeOut" }}
-              className="text-[12vw] md:text-[8vw] leading-[0.8] font-heading font-bold text-white text-center"
+              className="text-[12vw] md:text-[8vw] leading-[0.8] font-heading font-bold text-white text-center relative z-20"
             >
               AUGUSTO <br/> VALVERDE
             </motion.h1>
             
-            {/* Character Positioned: Above Name on Mobile (overlapping), Right of Name on Desktop */}
+            {/* Character Positioned: Above Name on Mobile (overlapping, centered), Right of Name on Desktop */}
             <motion.div
               initial={{ opacity: 0, scale: 0.9, x: 20 }}
               animate={{ opacity: 1, scale: 1, x: 0 }}
               transition={{ delay: 1.5, duration: 0.8 }}
-              className="absolute left-1/2 -translate-x-1/2 -top-24 w-32 md:left-auto md:translate-x-0 md:-right-44 md:bottom-4 md:top-auto md:w-48 z-10 pointer-events-none"
+              className="absolute left-1/2 -translate-x-1/2 -top-32 w-32 md:left-auto md:translate-x-0 md:-right-24 lg:-right-44 md:-bottom-12 md:top-auto md:w-48 z-10 pointer-events-none"
             >
               <img 
                 src="/assets/greengo-doodle-01-standing-border.svg" 
@@ -306,14 +312,14 @@ const App: React.FC = () => {
             initial={{ scaleX: 0 }}
             animate={{ scaleX: 1 }}
             transition={{ duration: 1.2, delay: 0.5, ease: "circOut" }}
-            className="w-32 md:w-64 h-2 md:h-4 bg-[#6BCB77] mt-4 md:mt-8 mb-6"
+            className="w-32 md:w-64 h-2 md:h-4 bg-[#6BCB77] mt-4 md:mt-8 mb-6 relative z-20"
           />
 
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1, duration: 1 }}
-            className="text-lg md:text-2xl font-light uppercase tracking-[0.3em] text-gray-300"
+            className="text-lg md:text-2xl font-light uppercase tracking-[0.3em] text-gray-300 relative z-20"
           >
             Portafolio de diseño gráfico 2025
           </motion.p>
@@ -361,7 +367,7 @@ const App: React.FC = () => {
                  viewport={{ once: true }}
                >
                  <img 
-                    src="./assets/greengo-doodle-02-greeting.svg" 
+                    src="/assets/greengo-doodle-02-greeting.svg" 
                     alt="Greeting Character"
                     className="w-48 md:w-64 object-contain"
                  />
@@ -397,14 +403,13 @@ const App: React.FC = () => {
         className="relative z-20 pt-32 pb-40 bg-[#F0F4F8] text-[#282828] rounded-t-[3rem] md:rounded-t-[5rem] -mt-20 shadow-[0_-20px_60px_rgba(0,0,0,0.5)]"
       >
         <div className="max-w-[1600px] mx-auto px-4 md:px-6">
-          <div className="mb-16 text-center md:text-left md:flex justify-between items-end">
-            <div>
-               <h2 className="text-3xl sm:text-4xl md:text-8xl font-heading font-bold text-[#282828] leading-none">
-                 PORTAFOLIO
-               </h2>
-            </div>
-            <p className="text-[#282828]/70 max-w-md mt-6 md:mt-0 text-lg">
-              A selection of brand campaigns, key visuals, and digital experiences.
+          {/* Centered Header for Portfolio */}
+          <div className="mb-16 text-center flex flex-col items-center">
+            <h2 className="text-5xl md:text-8xl font-heading font-bold text-[#282828] leading-none mb-6">
+               PORTAFOLIO
+            </h2>
+            <p className="text-[#282828]/70 max-w-md text-lg">
+              Una selección de mis trabajos.
             </p>
           </div>
 
@@ -462,14 +467,14 @@ const App: React.FC = () => {
                 <h3 className="text-2xl font-heading font-bold mb-8 text-[#6BCB77] text-center md:text-left">IDIOMAS</h3>
                 <div className="flex flex-col md:flex-row justify-around gap-8">
                   <div className="flex items-center gap-4 bg-white/5 p-4 rounded-xl flex-1">
-                    <img src={flagEs} alt="Español" className="w-12 h-12 rounded-full object-cover shrink-0 border-2 border-white/20" />
+                    <img src="/assets/flag-es.svg" alt="Español" className="w-12 h-12 rounded-full object-cover shrink-0 border-2 border-white/20" />
                     <div>
                       <h4 className="font-bold text-lg">Español</h4>
                       <p className="text-white/50 text-sm">Idioma nativo</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-4 bg-white/5 p-4 rounded-xl flex-1">
-                    <img src={flagEn} alt="Inglés" className="w-12 h-12 rounded-full object-cover shrink-0 border-2 border-white/20" />
+                    <img src="/assets/flag-en.svg" alt="Inglés" className="w-12 h-12 rounded-full object-cover shrink-0 border-2 border-white/20" />
                     <div>
                       <h4 className="font-bold text-lg">Inglés</h4>
                       <p className="text-white/50 text-sm">Nivel Avanzado (C2)</p>
@@ -544,7 +549,7 @@ const App: React.FC = () => {
                viewport={{ once: true }}
              >
                 <img 
-                  src="./assets/greengo-doodle-05-phone.svg" 
+                  src="/assets/greengo-doodle-05-phone.svg" 
                   alt="Phone Character" 
                   className="w-48 md:w-64 object-contain"
                 />
@@ -570,7 +575,7 @@ const App: React.FC = () => {
                           <Mail className="w-6 h-6" />
                        </div>
                        <div>
-                          <span className="block text-xs font-bold text-white/50 uppercase tracking-wider">Email</span>
+                          <span className="block text-xs font-bold text-white/50 uppercase tracking-wider">Correo</span>
                           <span className="font-bold text-sm md:text-base break-all">augustovalverdegraphics@gmail.com</span>
                        </div>
                     </a>
@@ -580,7 +585,7 @@ const App: React.FC = () => {
                           <Phone className="w-6 h-6" />
                        </div>
                        <div>
-                          <span className="block text-xs font-bold text-white/50 uppercase tracking-wider">Phone</span>
+                          <span className="block text-xs font-bold text-white/50 uppercase tracking-wider">Teléfono</span>
                           <span className="font-bold text-lg">+591 76518529</span>
                        </div>
                     </a>
@@ -601,7 +606,7 @@ const App: React.FC = () => {
            <div className="mt-16 pt-8 border-t border-white/10 flex justify-between items-center text-xs font-mono text-white/40">
               <span>© 2025 Augusto Valverde.</span>
               <a href="#" className="hover:text-white flex items-center gap-1">
-                 Download CV <Download className="w-3 h-3" />
+                 Descargar CV <Download className="w-3 h-3" />
               </a>
            </div>
         </div>
@@ -698,7 +703,7 @@ const App: React.FC = () => {
                        {selectedProject.category}
                      </span>
                      <span className="px-3 py-1 border border-white/20 rounded-full text-xs uppercase tracking-wider text-white/60">
-                       Graphic Design
+                       Diseño Gráfico
                      </span>
                   </div>
                 </motion.div>
