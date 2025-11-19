@@ -284,31 +284,14 @@ const App: React.FC = () => {
           className="z-10 text-center flex flex-col items-center w-full max-w-6xl"
         >
           <div className="relative inline-block mt-12 md:mt-0 w-full flex justify-center">
-           
-            {/* Character Positioned: Above Name on Mobile (overlapping, centered), Right of Name on Desktop */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9, x: 20 }}
-              animate={{ opacity: 1, scale: 1, x: 0 }}
-              transition={{ delay: 1.5, duration: 0.8 }}
-              className="absolute left-1/3 -translate-x-1/2 -top-32 w-32 md:left-[85%] md:-translate-x-1/2 md:-bottom-12 md:top-auto md:w-48 z-30 pointer-events-none"
-            >
-              <img 
-                src="/assets/greengo-doodle-01-standing-border.svg" 
-                alt="Augusto Character" 
-                className="w-full h-full object-contain drop-shadow-2xl"
-              />
-            </motion.div>
-
-            <motion.h1 
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, ease: "easeOut" }}
-              className="text-[12vw] md:text-[8vw] leading-[0.8] font-heading font-bold text-white text-center relative z-20"
-            >
-              AUGUSTO <br/> VALVERDE
-            </motion.h1>
-            
-
+             <motion.img 
+                src="/assets/hero-h1.svg" 
+                alt="Augusto Valverde" 
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, ease: "easeOut" }}
+                className="w-full max-w-[90%] md:max-w-4xl object-contain relative z-20 drop-shadow-2xl"
+             />
           </div>
           
           <motion.div 
