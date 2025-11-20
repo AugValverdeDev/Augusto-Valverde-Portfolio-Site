@@ -1,4 +1,3 @@
-
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -25,10 +24,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
       data-hover="true"
       onClick={onClick}
     >
-      {/* Image Background with Zoom */}
+      {/* Image Background with Zoom - Uses the first image as thumbnail */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.img 
-          src={project.image} 
+          src={project.images[0]} 
           alt={project.title} 
           className="h-full w-full object-cover will-change-transform"
           variants={{

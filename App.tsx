@@ -64,7 +64,7 @@ const PROJECTS_DATA = [
     category_es: 'Campaña',
     category_en: 'Campaign',
     year: '2024',
-    image: '/assets/astrix-kv.jpg',
+    images: ['/assets/astrix-kv.jpg', '/assets/astrix-kv.jpg'], // Simulating gallery with duplicate
     description_es: 'Diseño de Key Visuals para líneas de productos Astrix (OLA, LIZ). Enfoque en composición vibrante de productos y visuales de alto impacto.',
     description_en: 'Key visual design for Astrix product lines (OLA, LIZ). Focus on vibrant product compositing and high-impact visuals.'
   },
@@ -76,7 +76,7 @@ const PROJECTS_DATA = [
     category_es: 'Redes Sociales',
     category_en: 'Social Media',
     year: '2024',
-    image: '/assets/astrix-rrss.jpg',
+    images: ['/assets/astrix-rrss.jpg'],
     description_es: 'Estrategia de contenido para redes sociales de marcas OLA y LIZ, destacando "Gala es el mejor shampoo" y posts de engagement estilo meme.',
     description_en: 'Social media content strategy for OLA and LIZ brands, featuring "Gala es el mejor shampoo" and meme-style engagement posts.'
   },
@@ -88,7 +88,7 @@ const PROJECTS_DATA = [
     category_es: 'Campaña',
     category_en: 'Campaign',
     year: '2023',
-    image: '/assets/ketal-kv.jpg',
+    images: ['/assets/ketal-kv.jpg'],
     description_es: 'Visuales de marketing retail para Ketal Hipermercados, incluyendo "2do Aguinaldo" y "Amiga nos quedamos sin piqueos".',
     description_en: 'Retail marketing visuals for Ketal Hipermercados, including "2do Aguinaldo" and "Amiga nos quedamos sin piqueos".'
   },
@@ -100,7 +100,7 @@ const PROJECTS_DATA = [
     category_es: 'Ilustración',
     category_en: 'Illustration',
     year: '2023',
-    image: '/assets/ketal-campaign.jpg',
+    images: ['/assets/ketal-campaign.jpg'],
     description_es: 'Diseño de personajes y campañas mensuales temáticas, presentando el concepto de superhéroe "Mayo Espectacular".',
     description_en: 'Character design and thematic monthly campaigns, featuring the "Mayo Espectacular" superhero concept.'
   },
@@ -112,7 +112,7 @@ const PROJECTS_DATA = [
     category_es: 'Campaña',
     category_en: 'Campaign',
     year: '2023',
-    image: '/assets/lbc-guerreros.jpg',
+    images: ['/assets/lbc-guerreros.jpg'],
     description_es: 'Dirección de arte para la campaña "Guerreros Solidarios", destacando historias de coraje, nobleza y fortaleza.',
     description_en: 'Art direction for the "Guerreros Solidarios" campaign, highlighting stories of courage, nobility, and strength.'
   },
@@ -124,7 +124,7 @@ const PROJECTS_DATA = [
     category_es: 'Redes Sociales',
     category_en: 'Social Media',
     year: '2023',
-    image: '/assets/lbc-rrss.jpg',
+    images: ['/assets/lbc-rrss.jpg'],
     description_es: 'Gestión integral de redes sociales para productos de seguros (Auto, Hogar) con una estética limpia y corporativa.',
     description_en: 'Comprehensive social media management for insurance products (Auto, Hogar) with a clean, corporate aesthetic.'
   },
@@ -136,7 +136,7 @@ const PROJECTS_DATA = [
     category_es: 'Branding',
     category_en: 'Branding',
     year: '2024',
-    image: '/assets/axs-corp.jpg',
+    images: ['/assets/axs-corp.jpg'],
     description_es: 'Visuales publicitarios corporativos de alta tecnología para AXS, enfatizando conectividad, velocidad y tecnología futura.',
     description_en: 'High-tech corporate advertising visuals for AXS, emphasizing connectivity, speed, and future tech.'
   },
@@ -148,7 +148,7 @@ const PROJECTS_DATA = [
     category_es: 'Redes Sociales',
     category_en: 'Social Media',
     year: '2024',
-    image: '/assets/axs-rrss.jpg',
+    images: ['/assets/axs-rrss.jpg'],
     description_es: 'Diseños dinámicos para redes sociales de planes de internet, "El Poder de 1 Bs" y promociones de servicios de streaming.',
     description_en: 'Dynamic social media designs for internet plans, "El Poder de 1 Bs", and streaming service promotions.'
   },
@@ -160,7 +160,7 @@ const PROJECTS_DATA = [
     category_es: 'Merchandising',
     category_en: 'Merch',
     year: '2024',
-    image: '/assets/axs-branding.jpg',
+    images: ['/assets/axs-branding.jpg'],
     description_es: 'Diseño de merchandising incluyendo camisetas, tazas y packaging para eventos corporativos y patrocinios de carnaval.',
     description_en: 'Merchandise design including T-shirts, mugs, and packaging for corporate events and carnival sponsorships.'
   },
@@ -172,7 +172,7 @@ const PROJECTS_DATA = [
     category_es: '3D / Eventos',
     category_en: '3D / Event',
     year: '2024',
-    image: '/assets/axs-stands.jpg',
+    images: ['/assets/axs-stands.jpg'],
     description_es: 'Visualización 3D y diseño espacial para centros de experiencia y stands comerciales de AXS.',
     description_en: '3D visualization and spatial design for AXS experience centers and commercial stands.'
   },
@@ -184,7 +184,7 @@ const PROJECTS_DATA = [
     category_es: 'Ilustración',
     category_en: 'Illustration',
     year: '2024',
-    image: '/assets/axs-stickers.jpg',
+    images: ['/assets/axs-stickers.jpg'],
     description_es: 'Set de ilustraciones personalizadas para stickers de WhatsApp utilizados en marketing digital y servicio al cliente.',
     description_en: 'Custom illustration set for WhatsApp stickers used in digital marketing and customer service.'
   },
@@ -196,7 +196,7 @@ const PROJECTS_DATA = [
     category_es: 'Redes Sociales',
     category_en: 'Social Media',
     year: '2024',
-    image: '/assets/innovasalud.jpg',
+    images: ['/assets/innovasalud.jpg', '/assets/innovasalud2.jpg', '/assets/innovasalud3.jpg'],
     description_es: 'Gráficos limpios y accesibles para redes sociales de servicios de salud dental, campañas de blanqueamiento y publicaciones estacionales.',
     description_en: 'Clean, approachable social media graphics for dental health services, whitening campaigns, and seasonal posts.'
   },
@@ -208,43 +208,43 @@ const PROJECTS_DATA = [
     category_es: 'Campaña',
     category_en: 'Campaign',
     year: '2023',
-    image: '/assets/propacha.jpg',
+    images: ['/assets/propacha.jpg'],
     description_es: 'Campaña de conciencia ambiental "Juntos podemos salvar los bosques" presentando bomberos voluntarios y fotografía de naturaleza.',
     description_en: 'Environmental awareness campaign "Juntos podemos salvar los bosques" featuring volunteer firefighters and nature photography.'
   },
   { 
     id: '14', 
-    title: 'Set "Mi Casa Es Tu Casa"',
+    title_es: 'Set "Mi Casa Es Tu Casa"',
     title_en: '"Mi Casa Es Tu Casa" Set',
     client: 'ATB', 
     category_es: '3D / Set Design',
     category_en: '3D / Set Design',
     year: '2024',
-    image: '/assets/atb-set.jpg',
+    images: ['/assets/atb-set.jpg'],
     description_es: 'Rediseño de set virtual para el programa de TV "Mi Casa Es Tu Casa", creado en Blender/Cinema 4D.',
     description_en: 'Virtual set redesign for the TV program "Mi Casa Es Tu Casa", created in Blender/Cinema 4D.'
   },
   { 
     id: '15', 
-    title: 'Activación Expofarma',
+    title_es: 'Activación Expofarma',
     title_en: 'Expofarma Activation',
     client: 'BAGÓ', 
     category_es: 'Eventos',
     category_en: 'Event',
     year: '2025',
-    image: '/assets/bago-expofarma.jpg',
+    images: ['/assets/bago-expofarma.jpg'],
     description_es: 'Diseño de stand de activación para Refrianex en Expofarma 2025, con zonas de fotos interactivas.',
     description_en: 'Event activation booth design for Refrianex at Expofarma 2025, featuring interactive photo zones.'
   },
   { 
     id: '16', 
-    title: 'Conferencia & Stand',
+    title_es: 'Conferencia & Stand',
     title_en: 'Conference & Stand',
     client: 'BDP', 
     category_es: '3D / Eventos',
     category_en: '3D / Event',
     year: '2025',
-    image: '/assets/bdp-event.jpg',
+    images: ['/assets/bdp-event.jpg'],
     description_es: 'Montaje de escenario y diseño de stand para eventos del Banco de Desarrollo Productivo, específicamente para "La Paz Expone 2025".',
     description_en: 'Stage setup and stand design for Banco de Desarrollo Productivo events, specifically for "La Paz Expone 2025".'
   },
@@ -261,7 +261,7 @@ const TEXT_CONTENT = {
     ],
     heroRole: "Portafolio de diseño gráfico 2025",
     aboutTitle: "¡Hola!",
-    aboutLeft: "Soy Augusto, un diseñador gráfico creativo, con 8 años de experiencia en agencias.",
+    aboutLeft: "Soy un diseñador gráfico creativo, con 8 años de experiencia en agencias.",
     aboutRight: "Tengo experiencia diseñando piezas tradicionales y digitales, buen ojo para el diseño, excelente ortografía y pasión por aprender.",
     portfolioTitle: "PORTAFOLIO",
     portfolioSubtitle: "Una selección de mis trabajos.",
@@ -287,9 +287,9 @@ const TEXT_CONTENT = {
       { label: 'Contact', id: 'contact' },
     ],
     heroRole: "Graphic Design Portfolio 2025",
-    aboutTitle: "Hi there!",
-    aboutLeft: "I'm Augusto, a creative graphic designer with 8 years of agency experience.",
-    aboutRight: "I have experience designing traditional and digital pieces, a good eye for design, and a passion for learning.",
+    aboutTitle: "Hello!",
+    aboutLeft: "I am a creative graphic designer with 8 years of agency experience.",
+    aboutRight: "I have experience designing traditional and digital pieces, a good eye for design, excellent spelling, and a passion for learning.",
     portfolioTitle: "PORTFOLIO",
     portfolioSubtitle: "A selection of my work.",
     skillsTitle: "SKILLS",
@@ -297,7 +297,7 @@ const TEXT_CONTENT = {
     langEs: "Spanish",
     langEsDesc: "Native",
     langEn: "English",
-    langEnDesc: "Fluent (C2 Proficient)",
+    langEnDesc: "Advanced (C2)",
     experienceTitle: "EXPERIENCE",
     contactTitle: "CONTACT ME!",
     emailLabel: "Email",
@@ -314,6 +314,7 @@ const App: React.FC = () => {
   const y = useTransform(scrollYProgress, [0, 1], [0, -50]);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [language, setLanguage] = useState<'es' | 'en'>('es');
 
   const t = TEXT_CONTENT[language];
@@ -347,16 +348,40 @@ const App: React.FC = () => {
     }
   };
 
+  const handleProjectClick = (project: Project) => {
+    setSelectedProject(project);
+    setCurrentImageIndex(0);
+  };
+
   const navigateProject = (direction: 'next' | 'prev') => {
     if (!selectedProject) return;
     const currentIndex = projects.findIndex(p => p.id === selectedProject.id);
-    let nextIndex;
+    
     if (direction === 'next') {
-      nextIndex = (currentIndex + 1) % projects.length;
+      // If there are more images in current project, go to next image
+      if (currentImageIndex < selectedProject.images.length - 1) {
+        setCurrentImageIndex(prev => prev + 1);
+      } else {
+        // Go to next project
+        const nextIndex = (currentIndex + 1) % projects.length;
+        setSelectedProject(projects[nextIndex]);
+        setCurrentImageIndex(0);
+      }
     } else {
-      nextIndex = (currentIndex - 1 + projects.length) % projects.length;
+      // If not first image, go to prev image
+      if (currentImageIndex > 0) {
+        setCurrentImageIndex(prev => prev - 1);
+      } else {
+        // Go to previous project, start at its last image (optional, or first)
+        const prevIndex = (currentIndex - 1 + projects.length) % projects.length;
+        const prevProject = projects[prevIndex];
+        setSelectedProject(prevProject);
+        // Typically resetting to 0 when switching projects via prev/next is less confusing
+        // unless explicitly simulating a continuous reel. Let's default to first image of prev project.
+        // Or if we want to cycle backwards through images:
+        setCurrentImageIndex(prevProject.images.length - 1);
+      }
     }
-    setSelectedProject(projects[nextIndex]);
   };
 
   return (
@@ -564,7 +589,7 @@ const App: React.FC = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {projects.map((project) => (
-              <ProjectCard key={project.id} project={project} onClick={() => setSelectedProject(project)} />
+              <ProjectCard key={project.id} project={project} onClick={() => handleProjectClick(project)} />
             ))}
           </div>
         </div>
@@ -725,8 +750,7 @@ const App: React.FC = () => {
                        </div>
                        <div>
                           <span className="block text-xs font-bold text-white/50 uppercase tracking-wider">{t.emailLabel}</span>
-                          <span className="font-bold text-sm md:text-base break-all">augustovalverdegraphics</span><br />
-                          <span className="font-bold text-sm md:text-base break-all">@gmail.com</span>
+                          <span className="font-bold text-xs sm:text-sm md:text-base whitespace-nowrap">augustovalverdegraphics@gmail.com</span>
                        </div>
                     </a>
 
@@ -755,6 +779,9 @@ const App: React.FC = () => {
            
            <div className="mt-16 pt-8 border-t border-white/10 flex justify-between items-center text-xs font-mono text-white/40">
               <span>© 2025 Augusto Valverde.</span>
+              <a href="#" className="hover:text-white flex items-center gap-1">
+                 {t.downloadCv} <Download className="w-3 h-3" />
+              </a>
            </div>
         </div>
       </footer>
@@ -807,8 +834,8 @@ const App: React.FC = () => {
               <div className="w-full md:w-2/3 h-[40vh] md:h-[80vh] relative overflow-hidden bg-black">
                 <AnimatePresence mode="wait">
                   <motion.img 
-                    key={selectedProject.id}
-                    src={selectedProject.image} 
+                    key={selectedProject.id + currentImageIndex} // Key ensures animation triggers on image change
+                    src={selectedProject.images[currentImageIndex]} 
                     alt={selectedProject.title} 
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
@@ -821,6 +848,16 @@ const App: React.FC = () => {
                     }}
                   />
                 </AnimatePresence>
+                
+                {/* Gallery Indicators */}
+                <div className="absolute bottom-6 left-6 flex gap-2 z-20">
+                  {selectedProject.images.map((_, idx) => (
+                    <div 
+                      key={idx}
+                      className={`w-2 h-2 rounded-full transition-colors ${idx === currentImageIndex ? 'bg-[#6BCB77]' : 'bg-white/50'}`}
+                    />
+                  ))}
+                </div>
               </div>
 
               {/* Content Side */}

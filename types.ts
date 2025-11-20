@@ -1,4 +1,3 @@
-
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -9,7 +8,7 @@ export interface Project {
   title: string;
   client: string;
   category: string;
-  image: string;
+  images: string[]; // Changed from image: string to images: string[]
   description: string;
   year: string;
 }
