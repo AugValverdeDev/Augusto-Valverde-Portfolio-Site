@@ -382,7 +382,7 @@ const App: React.FC = () => {
                className={`text-xs font-bold transition-colors ${language === 'es' ? 'text-[#6BCB77]' : 'text-white hover:text-white/80'}`}
                data-hover="true"
              >
-               ES
+               ESPAÑOL
              </button>
              <span className="text-white/30">|</span>
              <button 
@@ -390,7 +390,7 @@ const App: React.FC = () => {
                className={`text-xs font-bold transition-colors ${language === 'en' ? 'text-[#6BCB77]' : 'text-white hover:text-white/80'}`}
                data-hover="true"
              >
-               EN
+               ENGLISH
              </button>
           </div>
         </div>

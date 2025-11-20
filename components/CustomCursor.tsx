@@ -61,7 +61,7 @@ const CustomCursor: React.FC = () => {
           }}
           transition={{ duration: 0.2 }}
         >
-          Haz Click
+          o
         </motion.span>
       </motion.div>
     </motion.div>
