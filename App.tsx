@@ -425,7 +425,7 @@ const App: React.FC = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="fixed inset-0 z-30 bg-[#282828]/95 backdrop-blur-xl flex flex-col items-center justify-center gap-8 md:hidden"
+            className="fixed inset-0 z-[55] bg-[#282828]/95 backdrop-blur-xl flex flex-col items-center justify-center gap-8 md:hidden"
           >
             {t.nav.map((item) => (
               <button
