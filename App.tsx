@@ -214,7 +214,7 @@ const PROJECTS_DATA = [
   },
   { 
     id: '14', 
-    title_es: 'Set "Mi Casa Es Tu Casa"',
+    title: 'Set "Mi Casa Es Tu Casa"',
     title_en: '"Mi Casa Es Tu Casa" Set',
     client: 'ATB', 
     category_es: '3D / Set Design',
@@ -226,7 +226,7 @@ const PROJECTS_DATA = [
   },
   { 
     id: '15', 
-    title_es: 'Activación Expofarma',
+    title: 'Activación Expofarma',
     title_en: 'Expofarma Activation',
     client: 'BAGÓ', 
     category_es: 'Eventos',
@@ -238,7 +238,7 @@ const PROJECTS_DATA = [
   },
   { 
     id: '16', 
-    title_es: 'Conferencia & Stand',
+    title: 'Conferencia & Stand',
     title_en: 'Conference & Stand',
     client: 'BDP', 
     category_es: '3D / Eventos',
@@ -669,10 +669,10 @@ const App: React.FC = () => {
                     
                     <div className="flex-1 w-full">
                       <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
-                        <h3 className="text-xl font-bold font-heading">{exp.company}</h3>
+                        <h3 className="text-xl font-bold font-heading uppercase tracking-tighter">{exp.company}</h3>
                         <span className="text-sm font-mono text-[#6BCB77] font-bold bg-[#6BCB77]/10 px-3 py-1 rounded-full w-fit mt-2 md:mt-0">{exp.period}</span>
                       </div>
-                      <p className="text-gray-500">{exp.role}</p>
+                      <p className="text-[#6BCB77] font-heading font-bold tracking-widest uppercase text-sm md:text-base mt-1">{exp.role}</p>
                     </div>
                  </div>
                </motion.div>
@@ -725,7 +725,8 @@ const App: React.FC = () => {
                        </div>
                        <div>
                           <span className="block text-xs font-bold text-white/50 uppercase tracking-wider">{t.emailLabel}</span>
-                          <span className="font-bold text-sm md:text-base break-all">augustovalverdegraphics@gmail.com</span>
+                          <span className="font-bold text-sm md:text-base break-all">augustovalverdegraphics</span><br />
+                          <span className="font-bold text-sm md:text-base break-all">@gmail.com</span>
                        </div>
                     </a>
 
@@ -741,10 +742,10 @@ const App: React.FC = () => {
                  </div>
 
                  <div className="flex justify-center md:justify-start gap-6">
-                    <a href="#" className="bg-white text-[#282828] px-8 py-4 rounded-full font-bold uppercase tracking-widest hover:bg-[#6BCB77] hover:text-black transition-colors flex items-center gap-2">
+                    <a href="https://www.linkedin.com/in/augusto-valverde-dg/" className="bg-white text-[#282828] px-8 py-4 rounded-full font-bold uppercase tracking-widest hover:bg-[#6BCB77] hover:text-black transition-colors flex items-center gap-2">
                        <Linkedin className="w-5 h-5" /> LinkedIn
                     </a>
-                    <a href="#" className="bg-white text-[#282828] px-8 py-4 rounded-full font-bold uppercase tracking-widest hover:bg-[#6BCB77] hover:text-black transition-colors flex items-center gap-2">
+                    <a href="https://www.behance.net/augustovalverdegraph" className="bg-white text-[#282828] px-8 py-4 rounded-full font-bold uppercase tracking-widest hover:bg-[#6BCB77] hover:text-black transition-colors flex items-center gap-2">
                        <Globe className="w-5 h-5" /> Behance
                     </a>
                  </div>
@@ -754,9 +755,6 @@ const App: React.FC = () => {
            
            <div className="mt-16 pt-8 border-t border-white/10 flex justify-between items-center text-xs font-mono text-white/40">
               <span>© 2025 Augusto Valverde.</span>
-              <a href="#" className="hover:text-white flex items-center gap-1">
-                 {t.downloadCv} <Download className="w-3 h-3" />
-              </a>
            </div>
         </div>
       </footer>
