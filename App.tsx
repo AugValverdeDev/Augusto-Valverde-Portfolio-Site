@@ -5,7 +5,7 @@
 
 import React, { useState } from 'react';
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
-import { Menu, X, ChevronLeft, ChevronRight, Mail, Phone, Linkedin, Globe, Download, Monitor, PenTool, Video, Box, Braces, Brain } from 'lucide-react';
+import { Menu, X, ChevronLeft, ChevronRight, Mail, Phone, Linkedin, Globe, Download, Monitor, PenTool, Video, Box, Braces, Brain, Camera, BookOpenText, Film } from 'lucide-react';
 import FluidBackground from './components/FluidBackground';
 import CustomCursor from './components/CustomCursor';
 import ProjectCard from './components/ArtistCard';
@@ -14,13 +14,13 @@ import { Project, Skill, Experience } from './types';
 // --- DATA ---
 
 const SKILLS_DATA = [
-  { name_es: 'Photoshop', name_en: 'Photoshop', level: 90, icon: PenTool },
+  { name_es: 'Photoshop', name_en: 'Photoshop', level: 90, icon: Camera },
   { name_es: 'Illustrator', name_en: 'Illustrator', level: 85, icon: PenTool },
-  { name_es: 'InDesign', name_en: 'InDesign', level: 60, icon: PenTool },
+  { name_es: 'InDesign', name_en: 'InDesign', level: 60, icon: BookOpenText },
   { name_es: 'After Effects', name_en: 'After Effects', level: 70, icon: Video },
-  { name_es: 'DaVinci Resolve', name_en: 'DaVinci Resolve', level: 60, icon: Video },
-  { name_es: 'Cinema 4D', name_en: 'Cinema 4D', level: 60, icon: Box },
+  { name_es: 'DaVinci Resolve', name_en: 'DaVinci Resolve', level: 60, icon: Film },
   { name_es: 'Blender', name_en: 'Blender', level: 75, icon: Box },
+  { name_es: 'Cinema 4D', name_en: 'Cinema 4D', level: 60, icon: Box },
   { name_es: 'IA Generativa', name_en: 'Generative AI', level: 55, icon: Brain },
   { name_es: 'Desarrollo Web', name_en: 'Web Development', level: 30, icon: Braces },
 ];
@@ -271,7 +271,9 @@ const TEXT_CONTENT = {
     langEs: "Español",
     langEsDesc: "Idioma nativo",
     langEn: "Inglés",
-    langEnDesc: "Nivel Avanzado (C2)",
+    langEnDesc: "Nivel Avanzado (C2 Proficient)",
+    langEnCertUrl: "https://cert.efset.org/e6BUJA",
+    langEnCertText: "Certificado EF SET",
     experienceTitle: "EXPERIENCIA",
     contactTitle: "¡CONTÁCTAME!",
     emailLabel: "Correo",
@@ -298,7 +300,9 @@ const TEXT_CONTENT = {
     langEs: "Spanish",
     langEsDesc: "Native",
     langEn: "English",
-    langEnDesc: "Advanced (C2)",
+    langEnDesc: "Fluent (C2 Proficient)",
+    langEnCertUrl: "https://cert.efset.org/e6BUJA",
+    langEnCertText: "EF SET Certificate",
     experienceTitle: "EXPERIENCE",
     contactTitle: "CONTACT ME!",
     emailLabel: "Email",
@@ -649,7 +653,10 @@ const App: React.FC = () => {
                     <img src="/assets/flag-en.svg" alt="Inglés" className="w-12 h-12 rounded-full object-cover shrink-0 border-2 border-white/20" />
                     <div>
                       <h4 className="font-bold text-lg">{t.langEn}</h4>
-                      <p className="text-white/50 text-sm">{t.langEnDesc}</p>
+                      <p className="text-white/50 text-sm">{t.langEnDesc}{" "}
+                      <a href={t.langEnCertUrl} target="_blank" rel="noopener noreferrer" className="underline">
+                        {t.langEnCertText}
+                      </a></p>
                     </div>
                   </div>
                 </div>
@@ -764,10 +771,10 @@ const App: React.FC = () => {
                  </div>
 
                  <div className="flex justify-center md:justify-start gap-6">
-                    <a href="https://www.linkedin.com/in/augusto-valverde-dg/" className="bg-white text-[#282828] px-8 py-4 rounded-full font-bold uppercase tracking-widest hover:bg-[#6BCB77] hover:text-black transition-colors flex items-center gap-2">
+                    <a href="https://www.linkedin.com/in/augusto-valverde-dg/" target="_blank" className="bg-white text-[#282828] px-8 py-4 rounded-full font-bold uppercase tracking-widest hover:bg-[#6BCB77] hover:text-black transition-colors flex items-center gap-2">
                        <Linkedin className="w-5 h-5" /> LinkedIn
                     </a>
-                    <a href="https://www.behance.net/augustovalverdegraph" className="bg-white text-[#282828] px-8 py-4 rounded-full font-bold uppercase tracking-widest hover:bg-[#6BCB77] hover:text-black transition-colors flex items-center gap-2">
+                    <a href="https://www.behance.net/augustovalverdegraph" target="_blank" className="bg-white text-[#282828] px-8 py-4 rounded-full font-bold uppercase tracking-widest hover:bg-[#6BCB77] hover:text-black transition-colors flex items-center gap-2">
                        <Globe className="w-5 h-5" /> Behance
                     </a>
                  </div>
