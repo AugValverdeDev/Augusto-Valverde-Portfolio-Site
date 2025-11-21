@@ -5,7 +5,7 @@
 
 import React, { useState } from 'react';
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
-import { Menu, X, ChevronLeft, ChevronRight, Mail, Phone, Linkedin, Globe, Download, Monitor, PenTool, Video, Box } from 'lucide-react';
+import { Menu, X, ChevronLeft, ChevronRight, Mail, Phone, Linkedin, Globe, Download, Monitor, PenTool, Video, Box, Braces, Brain } from 'lucide-react';
 import FluidBackground from './components/FluidBackground';
 import CustomCursor from './components/CustomCursor';
 import ProjectCard from './components/ArtistCard';
@@ -14,14 +14,15 @@ import { Project, Skill, Experience } from './types';
 // --- DATA ---
 
 const SKILLS_DATA = [
-  { name_es: 'Photoshop', name_en: 'Photoshop', level: 95, icon: PenTool },
-  { name_es: 'Illustrator', name_en: 'Illustrator', level: 90, icon: PenTool },
-  { name_es: 'InDesign', name_en: 'InDesign', level: 85, icon: PenTool },
-  { name_es: 'After Effects', name_en: 'After Effects', level: 80, icon: Video },
-  { name_es: 'DaVinci Resolve', name_en: 'DaVinci Resolve', level: 75, icon: Video },
-  { name_es: 'Cinema 4D', name_en: 'Cinema 4D', level: 70, icon: Box },
+  { name_es: 'Photoshop', name_en: 'Photoshop', level: 90, icon: PenTool },
+  { name_es: 'Illustrator', name_en: 'Illustrator', level: 85, icon: PenTool },
+  { name_es: 'InDesign', name_en: 'InDesign', level: 60, icon: PenTool },
+  { name_es: 'After Effects', name_en: 'After Effects', level: 70, icon: Video },
+  { name_es: 'DaVinci Resolve', name_en: 'DaVinci Resolve', level: 60, icon: Video },
+  { name_es: 'Cinema 4D', name_en: 'Cinema 4D', level: 60, icon: Box },
   { name_es: 'Blender', name_en: 'Blender', level: 75, icon: Box },
-  { name_es: 'IA Generativa', name_en: 'Generative AI', level: 85, icon: Monitor },
+  { name_es: 'IA Generativa', name_en: 'Generative AI', level: 55, icon: Brain },
+  { name_es: 'Desarrollo Web', name_en: 'Web Development', level: 30, icon: Braces },
 ];
 
 const EXPERIENCE_DATA = [
@@ -376,9 +377,6 @@ const App: React.FC = () => {
         const prevIndex = (currentIndex - 1 + projects.length) % projects.length;
         const prevProject = projects[prevIndex];
         setSelectedProject(prevProject);
-        // Typically resetting to 0 when switching projects via prev/next is less confusing
-        // unless explicitly simulating a continuous reel. Let's default to first image of prev project.
-        // Or if we want to cycle backwards through images:
         setCurrentImageIndex(prevProject.images.length - 1);
       }
     }
@@ -579,7 +577,7 @@ const App: React.FC = () => {
         <div className="max-w-[1600px] mx-auto px-4 md:px-6">
           {/* Centered Header for Portfolio */}
           <div className="mb-16 text-center flex flex-col items-center">
-            <h2 className="text-5xl md:text-8xl font-heading font-bold text-[#282828] leading-none mb-6">
+            <h2 className="text-4xl sm:text-5xl md:text-8xl font-heading font-bold text-[#282828] leading-none mb-6 break-words">
                {t.portfolioTitle}
             </h2>
             <p className="text-[#282828]/70 max-w-md text-lg">
@@ -602,7 +600,7 @@ const App: React.FC = () => {
       >
          <div className="max-w-6xl mx-auto px-6">
             <div className="text-center mb-16">
-              <h2 className="text-3xl sm:text-4xl md:text-7xl font-heading font-bold text-white mb-4 break-words">{t.skillsTitle}</h2>
+              <h2 className="text-3xl sm:text-4xl md:text-7xl font-heading font-bold text-white mb-4 break-words hyphens-auto">{t.skillsTitle}</h2>
               <div className="w-24 h-2 bg-[#6BCB77] mx-auto rounded-full"></div>
             </div>
 
@@ -666,7 +664,7 @@ const App: React.FC = () => {
       >
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl md:text-7xl font-heading font-bold text-[#282828] mb-4 break-words">{t.experienceTitle}</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-7xl font-heading font-bold text-[#282828] mb-4 break-words hyphens-auto">{t.experienceTitle}</h2>
             <div className="w-24 h-2 bg-[#6BCB77] mx-auto rounded-full"></div>
           </div>
 
@@ -694,10 +692,10 @@ const App: React.FC = () => {
                     
                     <div className="flex-1 w-full">
                       <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
-                        <h3 className="text-xl font-bold font-heading uppercase tracking-tighter">{exp.company}</h3>
-                        <span className="text-sm font-mono text-[#6BCB77] font-bold bg-[#6BCB77]/10 px-3 py-1 rounded-full w-fit mt-2 md:mt-0">{exp.period}</span>
+                        <h3 className="text-lg sm:text-xl font-bold font-heading uppercase tracking-tighter leading-tight break-words">{exp.company}</h3>
+                        <span className="text-sm font-mono text-[#6BCB77] font-bold bg-[#6BCB77]/10 px-3 py-1 rounded-full w-fit mt-2 md:mt-0 whitespace-nowrap">{exp.period}</span>
                       </div>
-                      <p className="text-[#6BCB77] font-heading font-bold tracking-widest uppercase text-sm md:text-base mt-1">{exp.role}</p>
+                      <p className="text-[#6BCB77] font-heading font-bold tracking-widest uppercase text-sm md:text-base mt-1 break-words">{exp.role}</p>
                     </div>
                  </div>
                </motion.div>
@@ -750,7 +748,7 @@ const App: React.FC = () => {
                        </div>
                        <div>
                           <span className="block text-xs font-bold text-white/50 uppercase tracking-wider">{t.emailLabel}</span>
-                          <span className="font-bold text-xs sm:text-sm md:text-base whitespace-nowrap">augustovalverdegraphics@gmail.com</span>
+                          <span className="font-bold text-xs sm:text-sm md:text-base whitespace-nowrap">augustovalverdegraphics<br />@gmail.com</span>
                        </div>
                     </a>
 
@@ -779,9 +777,7 @@ const App: React.FC = () => {
            
            <div className="mt-16 pt-8 border-t border-white/10 flex justify-between items-center text-xs font-mono text-white/40">
               <span>© 2025 Augusto Valverde.</span>
-              <a href="#" className="hover:text-white flex items-center gap-1">
-                 {t.downloadCv} <Download className="w-3 h-3" />
-              </a>
+
            </div>
         </div>
       </footer>
