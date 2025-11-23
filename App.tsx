@@ -62,10 +62,10 @@ const PROJECTS_DATA = [
     title_es: 'Key Visuals',
     title_en: 'Key Visuals',
     client: 'ASTRIX', 
-    category_es: 'Campaña',
-    category_en: 'Campaign',
-    year: '2024',
-    images: ['/assets/astrix-kv.jpg', '/assets/astrix-kv.jpg'], // Simulating gallery with duplicate
+    category_es: 'Campañas',
+    category_en: 'Campaigns',
+    year: '2017 - 2018',
+    images: ['/assets/work-img/astrix-kv-1.jpg', '/assets/astrix-kv-2.jpg', '/assets/astrix-kv-3.jpg'], // Simulating gallery with duplicate
     description_es: 'Diseño de Key Visuals para líneas de productos Astrix (OLA, LIZ). Enfoque en composición vibrante de productos y visuales de alto impacto.',
     description_en: 'Key visual design for Astrix product lines (OLA, LIZ). Focus on vibrant product compositing and high-impact visuals.'
   },
@@ -76,9 +76,9 @@ const PROJECTS_DATA = [
     client: 'ASTRIX', 
     category_es: 'Redes Sociales',
     category_en: 'Social Media',
-    year: '2024',
-    images: ['/assets/astrix-rrss.jpg'],
-    description_es: 'Estrategia de contenido para redes sociales de marcas OLA y LIZ, destacando "Gala es el mejor shampoo" y posts de engagement estilo meme.',
+    year: '2017 - 2019',
+    images: ['/assets/work-img/astrix-rrss-1.jpg', '/assets/work-img/astrix-rrss-2.jpg', '/assets/work-img/astrix-rrss-3.jpg', '/assets/work-img/astrix-rrss-4.jpg', '/assets/work-img/astrix-rrss-5.jpg', '/assets/work-img/astrix-rrss-6.jpg', '/assets/work-img/astrix-rrss-7.jpg'],
+    description_es: 'Contenido para redes sociales para las marcas de la familia Astrix (ahora Unilever).',
     description_en: 'Social media content strategy for OLA and LIZ brands, featuring "Gala es el mejor shampoo" and meme-style engagement posts.'
   },
   { 
