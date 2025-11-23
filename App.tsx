@@ -759,7 +759,7 @@ const App: React.FC = () => {
                        </div>
                     </a>
 
-                    <a href="tel:+59176518529" className="flex items-center gap-4 p-4 rounded-xl hover:bg-white/5 transition-colors group border border-white/10">
+                    <a href="https://wa.me/59176518529" className="flex items-center gap-4 p-4 rounded-xl hover:bg-white/5 transition-colors group border border-white/10">
                        <div className="bg-white text-[#282828] p-3 rounded-full group-hover:bg-[#6BCB77] group-hover:text-black transition-colors">
                           <Phone className="w-6 h-6" />
                        </div>
