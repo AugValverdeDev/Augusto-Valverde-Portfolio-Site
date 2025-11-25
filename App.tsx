@@ -65,7 +65,7 @@ const PROJECTS_DATA = [
     category_es: 'Campañas',
     category_en: 'Campaigns',
     year: '2017 - 2018',
-    images: ['/assets/work-img/astrix-kv-1-fix.jpg', '/assets/work-img/astrix-kv-2.jpg', '/assets/work-img/astrix-kv-3.jpg'], // Simulating gallery with duplicate
+    images: ['/assets/work-img/astrix-kv-1-edit.jpg', '/assets/work-img/astrix-kv-2.jpg', '/assets/work-img/astrix-kv-3.jpg'], // Simulating gallery with duplicate
     description_es: 'Diseño de Key Visuals para líneas de productos Astrix (OLA, LIZ). Enfoque en composición vibrante de productos y visuales de alto impacto.',
     description_en: 'Key visual design for Astrix product lines (OLA, LIZ). Focus on vibrant product compositing and high-impact visuals.'
   },
