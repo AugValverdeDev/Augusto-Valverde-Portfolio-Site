@@ -124,8 +124,8 @@ const PROJECTS_DATA = [
     client: 'AXS', 
     category_es: 'Branding',
     category_en: 'Branding',
-    year: '2023',
-    images: ['/assets/work-img/axs-corp.jpg'],
+    year: '2022 - 2023',
+    images: ['/assets/work-img/axs-corp-1.jpg', '/assets/work-img/axs-corp-2.jpg', '/assets/work-img/axs-corp-3.jpg'],
     description_es: 'Visuales publicitarios corporativos de alta tecnología para AXS, enfatizando la conectividad, velocidad y tecnología características de la marca.',
     description_en: 'High-tech corporate advertising visuals for AXS, emphasizing the brand’s signature connectivity, speed, and technology.'
   },
