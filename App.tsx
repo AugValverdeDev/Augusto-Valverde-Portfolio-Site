@@ -216,7 +216,7 @@ const PROJECTS_DATA = [
     description_en: 'Custom illustration set for WhatsApp stickers used in digital marketing and customer service.'
   },
   { 
-    id: '12', 
+    id: '11', 
     title_es: 'Piezas de RRSS para clínica dental',
     title_en: 'Social media assets for a dental clinic.',
     client: 'INNOVASALUD', 
@@ -235,53 +235,74 @@ const PROJECTS_DATA = [
     description_en: 'Clean, approachable social media graphics for dental health services, whitening campaigns, and seasonal posts.'
   },
   { 
-    id: '13', 
+    id: '12', 
     title_es: 'Salvar Los Bosques',
     title_en: 'Save The Forests',
     client: 'PRO PACHA', 
     category_es: 'Campaña',
     category_en: 'Campaign',
     year: '2024',
-    images: ['/assets/work-img/propacha.jpg'],
-    description_es: 'Campaña de conciencia ambiental "Juntos podemos salvar los bosques" presentando bomberos voluntarios y fotografía de naturaleza.',
-    description_en: 'Environmental awareness campaign "Juntos podemos salvar los bosques" featuring volunteer firefighters and nature photography.'
+    images: ['/assets/work-img/bosque-1.jpg', '/assets/work-img/bosque-2.jpg', '/assets/work-img/bosque-3.jpg'],
+    description_es: 'Campaña de recaudación "Juntos podemos salvar los bosques" para equipar a los bomberos voluntarios durante la época de incendios en el Amazonas boliviano.',
+    description_en: '"Together We Can Save the Forests" fundraising campaign to equip volunteer firefighters during wildfire season in the Bolivian Amazon.'
   },
   { 
-    id: '14', 
-    title_es: 'Set "Mi Casa Es Tu Casa"',
-    title_en: '"Mi Casa Es Tu Casa" Set',
+    id: '13', 
+    title_es: 'Set del programa de TV "Mi Casa Es Tu Casa"',
+    title_en: '"Mi Casa Es Tu Casa" TV swoh set',
     client: 'ATB', 
     category_es: '3D / Set Design',
     category_en: '3D / Set Design',
-    year: '2024',
-    images: ['/assets/work-img/atb-set.jpg'],
-    description_es: 'Rediseño de set virtual para el programa de TV "Mi Casa Es Tu Casa", creado en Blender/Cinema 4D.',
-    description_en: 'Virtual set redesign for the TV program "Mi Casa Es Tu Casa", created in Blender/Cinema 4D.'
+    year: '2025',
+    images: ['/assets/work-img/atb-1.jpg',
+            '/assets/work-img/atb-2.jpg',
+            '/assets/work-img/atb-3.jpg',
+            '/assets/work-img/atb-4.jpg',
+            '/assets/work-img/atb-5.jpg',
+            '/assets/work-img/atb-6.jpg',],
+    description_es: 'Rediseño y visualización 3D del set para el programa de TV "Mi Casa Es Tu Casa".',
+    description_en: 'Set redesign and 3D visualization for the TV program "Mi Casa Es Tu Casa".'
+  },
+  { 
+    id: '14', 
+    title_es: 'Activación Refrianex para Expofarma',
+    title_en: 'Refrianex Activation for Expofarma',
+    client: 'BAGÓ', 
+    category_es: '3D / Eventos',
+    category_en: '3D / Event',
+    year: '2025',
+    images: ['/assets/work-img/bago-1.jpg',
+            '/assets/work-img/bago-2.jpg',
+            '/assets/work-img/bago-3.jpg',
+            '/assets/work-img/bago-4.jpg',
+            '/assets/work-img/bago-5.jpg'],
+    description_es: 'Diseño de stand de activación para Refrianex en Expofarma 2025, con zona de fotos interactiva.',
+    description_en: 'Event activation booth design for Refrianex at Expofarma 2025, featuring interactive photo zone.'
   },
   { 
     id: '15', 
-    title_es: 'Activación Expofarma',
-    title_en: 'Expofarma Activation',
-    client: 'BAGÓ', 
-    category_es: 'Eventos',
-    category_en: 'Event',
+    title_es: 'Diseño de Stand',
+    title_en: 'Stand design',
+    client: 'BDP', 
+    category_es: '3D / Eventos',
+    category_en: '3D / Event',
     year: '2025',
-    images: ['/assets/work-img/bago-expofarma.jpg'],
-    description_es: 'Diseño de stand de activación para Refrianex en Expofarma 2025, con zonas de fotos interactivas.',
-    description_en: 'Event activation booth design for Refrianex at Expofarma 2025, featuring interactive photo zones.'
+    images: ['/assets/work-img/bdp-1.jpg'],
+    description_es: 'Diseño y visualización 3D de stand para la participación del Banco de Desarrollo Productivo en la feria "La Paz Expone 2025".',
+    description_en: '3D design and visualization of the booth for the Banco de Desarrollo Productivo’s participation in the "La Paz Expone 2025" fair.'
   },
   { 
-    id: '16', 
-    title_es: 'Conferencia & Stand',
-    title_en: 'Conference & Stand',
+    id: '15', 
+    title_es: 'Diseño de Escenario',
+    title_en: 'Stage design',
     client: 'BDP', 
     category_es: '3D / Eventos',
     category_en: '3D / Event',
     year: '2025',
     images: ['/assets/work-img/bdp-event.jpg'],
-    description_es: 'Montaje de escenario y diseño de stand para eventos del Banco de Desarrollo Productivo, específicamente para "La Paz Expone 2025".',
-    description_en: 'Stage setup and stand design for Banco de Desarrollo Productivo events, specifically for "La Paz Expone 2025".'
-  },
+    description_es: 'Diseño y visualización 3D de escenario para exposiciones y charlas del Banco de Desarrollo Productivo.',
+    description_en: 'Design and 3D visualization of a stage for the Banco de Desarrollo Productivo’s presentations and talks.'
+}
 ];
 
 const TEXT_CONTENT = {
