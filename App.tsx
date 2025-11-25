@@ -79,7 +79,7 @@ const PROJECTS_DATA = [
     year: '2017 - 2019',
     images: ['/assets/work-img/astrix-rrss-1.jpg', '/assets/work-img/astrix-rrss-2.jpg', '/assets/work-img/astrix-rrss-3.jpg', '/assets/work-img/astrix-rrss-4.jpg', '/assets/work-img/astrix-rrss-5.jpg', '/assets/work-img/astrix-rrss-6.jpg', '/assets/work-img/astrix-rrss-7.jpg'],
     description_es: 'Contenido para redes sociales para las marcas de la familia Astrix (ahora Unilever).',
-    description_en: 'Social media content strategy for OLA and LIZ brands, featuring "Gala es el mejor shampoo" and meme-style engagement posts.'
+    description_en: 'Social media content for the Astrix family brands (now Unilever).'
   },
   { 
     id: '3', 
@@ -89,9 +89,9 @@ const PROJECTS_DATA = [
     category_es: 'Campaña',
     category_en: 'Campaign',
     year: '2023',
-    images: ['/assets/ketal-kv.jpg'],
-    description_es: 'Visuales de marketing retail para Ketal Hipermercados, incluyendo "2do Aguinaldo" y "Amiga nos quedamos sin piqueos".',
-    description_en: 'Retail marketing visuals for Ketal Hipermercados, including "2do Aguinaldo" and "Amiga nos quedamos sin piqueos".'
+    images: ['/assets/work-img/ketal-kv-1.jpg', '/assets/work-img/ketal-kv-2.jpg', '/assets/work-img/ketal-kv-3.jpg', '/assets/work-img/ketal-kv-4.jpg', '/assets/work-img/ketal-heroe-1.jpg', '/assets/work-img/ketal-heroe-2.jpg'],
+    description_es: 'Diseño de Key Visuals para campañas mensuales de Ketal Hipermercados.',
+    description_en: 'Key Visual design for monthly campaigns for Ketal Hipermercados.'
   },
   { 
     id: '4', 
