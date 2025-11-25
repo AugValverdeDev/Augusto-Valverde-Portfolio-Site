@@ -844,7 +844,7 @@ const App: React.FC = () => {
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                     transition={{ duration: 0.4 }}
-                    className="absolute inset-0 w-full h-full object-contain md:object-cover"
+                    className="absolute inset-0 w-full h-full object-contain"
                     onError={(e) => {
                       // Fallback if image is missing
                       e.currentTarget.src = 'https://placehold.co/800x600/282828/6BCB77?text=Image+Not+Found';
