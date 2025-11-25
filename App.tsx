@@ -89,7 +89,7 @@ const PROJECTS_DATA = [
     category_es: 'Campaña',
     category_en: 'Campaign',
     year: '2023',
-    images: ['/assets/work-img/ketal-kv-1.jpg', '/assets/work-img/ketal-kv-2.jpg', '/assets/work-img/ketal-kv-3.jpg', '/assets/work-img/ketal-kv-4.jpg', '/assets/work-img/ketal-heroe-1.jpg', '/assets/work-img/ketal-heroe-2.jpg'],
+    images: ['/assets/work-img/ketal-kv-1.jpg', '/assets/work-img/ketal-kv-2.jpg', '/assets/work-img/ketal-kv-3.jpg', '/assets/work-img/ketal-kv-4.jpg', '/assets/work-img/ketal-heroe-1-edit.jpg', '/assets/work-img/ketal-heroe-2.jpg'],
     description_es: 'Diseño de Key Visuals para campañas mensuales de Ketal Hipermercados.',
     description_en: 'Key Visual design for monthly campaigns for Ketal Hipermercados.'
   },
