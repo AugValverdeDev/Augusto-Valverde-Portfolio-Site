@@ -296,7 +296,7 @@ const PROJECTS_DATA = [
     description_en: '3D design and visualization of the booth for the Banco de Desarrollo Productivo’s participation in the "La Paz Expone 2025" fair.'
   },
   { 
-    id: '15', 
+    id: '16', 
     title_es: 'Diseño de Escenario',
     title_en: 'Stage design',
     client: 'BDP', 
