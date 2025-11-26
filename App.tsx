@@ -936,7 +936,7 @@ const App: React.FC = () => {
                      {selectedProject.client} — {selectedProject.year}
                   </span>
                   
-                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold uppercase leading-tight text-balance break-words mb-6 text-white">
+                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold uppercase leading-tight text-balance break-normal mb-6 text-white">
                     {selectedProject.title}
                   </h3>
                   
